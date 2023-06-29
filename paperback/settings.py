@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-adammkeane-paperback-pp5-zj2b0rb675.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-adammkeane-paperback-pp5-zj2b0rb675.us2.codeanyapp.com',
+                 'paperback-pp5-4d817902330a.herokuapp.com',
+                 'localhost']
 
 
 # Application definition
