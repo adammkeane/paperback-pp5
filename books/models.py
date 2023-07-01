@@ -19,7 +19,7 @@ class Book(models.Model):
 
     def just_date_published_on(self):
         """Simplfies date"""
-        return self.published_on.date()
+        return str(self.published_on)
 
     def avg_rating(self):
         """Calculates the mean average rating of a book"""
