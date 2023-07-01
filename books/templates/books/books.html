@@ -6,30 +6,33 @@
 {% block content %}
 <div class="container text-center">
     <div>
-        <h1 class="brand-h1">Books</h1>
+        <h1 class="brand-h1 mb-0">Books</h1>
     </div>
 </div>
 
-<div class="container mt-4">
+<div class="container mt-2">
     <div class="row no-gutters">
         {% for book in books %}
         <div class="col-lg-4 col-md-6 card border-0">
             <div class="card-body pb-0 p-lg-4 text-center">
                 {% if book.image %}
                 <a href="{% url 'book_detail' book.id %}">
-                    <img class="rounded img-fluid border" src="{{ book.image.url }}" alt="{{ book.name }}">
+                    <img class="rounded img-fluid bk-img-h border" src="{{ book.image.url }}" alt="{{ book.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'book_detail' book.id %}">
                     <img class="rounded img-fluid border" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body text-center">
-                    {{ book.name }}
+                <div class="card-body text-center mb-0 pb-0">
+                    <a href="{% url 'book_detail' book.id %}">
+                        <p class="mb-3">{{ book.name }}</p>
+                    </a>
                 </div>
-                <div class="card-body text-center">
-                    <h2 class="card-title">€{{ book.price }}</h2>
-                    <p class="mb-1"><strong> Rating: {{ book.avg_rating }} <i class="fa-regular fa-star"></i></strong>
+                <div class="card-body text-center mt-1 pt-1">
+                    <p class="mb-1"><strong>€{{ book.price }}</strong></p>
+                    <p class="mb-1">Rating: {{ book.avg_rating }}
+                        <i class="fa-regular fa-star"></i>
                     </p>
                     <p class="mt-0">Reviews: {{ book.reviews_total }}</p>
                 </div>
