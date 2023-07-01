@@ -3,5 +3,18 @@ from .models import Book, BookReview
 
 # Register your models here.
 
-admin.site.register(Book)
+
+class BookAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'author',
+        'price',
+        'avg_rating',
+        'image',
+    )
+
+    ordering = ('name',)
+
+
+admin.site.register(Book, BookAdmin)
 admin.site.register(BookReview)
