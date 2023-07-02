@@ -43,7 +43,7 @@ def all_books(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
 
-            books = books.order_by(sortkey)
+            books = books.order_by(sortkey) 
 
         if 'q' in request.GET:
             query = request.GET['q']
