@@ -62,10 +62,9 @@ class BookReview(models.Model):
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user_rating"
     )
-    title = models.CharField(max_length=50)
-    slug = models.SlugField(max_length=55)
+    title = models.CharField(max_length=50, blank=True)
     updated_on = models.DateTimeField(auto_now=True)
-    description = models.TextField(max_length=10000)
+    description = models.TextField(max_length=10000, blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     rating = models.DecimalField(
         choices=RATING, max_digits=2, decimal_places=1
