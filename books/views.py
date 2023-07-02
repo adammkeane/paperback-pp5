@@ -35,8 +35,9 @@ def all_books(request):
                 sortkey = 'lower_name'
                 books = books.annotate(lower_name=Lower('name'))
             if sortkey == 'rating':
-                sortkey = 'avg_rating'
-                books = books.annotate(avg_rating=Avg('book_review__rating'))
+                sortkey = 'avg_rating_sort'
+                books = books.annotate(
+                    avg_rating_sort=Avg('book_review__rating'))
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
