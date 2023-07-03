@@ -1,6 +1,6 @@
-<form class="form update-form" method="POST" action="">
+<form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
     {% csrf_token %}
-    <div class="form-group">
+    <div class=" form-group">
         <div class="input-group input-group-{{ item.item_id }}">
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }} 
@@ -24,7 +24,7 @@
                     </span>
                 </button>
             </div>
-            {% if item.product.has_options %}
+            {% if item.book.has_options %}
             <input type="hidden" name="book_option" value="{{ item.option }}">
             {% endif %}
         </div>
