@@ -11,6 +11,7 @@ class BookAdmin(admin.ModelAdmin):
         'price',
         'avg_rating',
         'image',
+        'has_options'
     )
 
     ordering = ('name',)
