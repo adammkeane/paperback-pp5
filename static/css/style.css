@@ -8,6 +8,12 @@ h1 {
     font-size: 2rem;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* Nav Bar */
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .75);
