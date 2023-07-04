@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
+from books.models import Book
+from django.conf import settings
 
 
 def view_bag(request):
@@ -10,7 +12,7 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add quantity of selected item to shopping bag """
 
-    # book = get_object_or_404(Book, pk=item_id)
+    book = get_object_or_404(Book, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     option = None
@@ -42,7 +44,7 @@ def add_to_bag(request, item_id):
     #             request, f'Updated {book.name} quantity to {bag[item_id]}')
         else:
             bag[item_id] = quantity
-    #         messages.success(request, f'Added {book.name} to your bag')
+            messages.success(request, f'Added {book.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
