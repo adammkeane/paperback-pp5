@@ -9,8 +9,13 @@ from books.models import Book
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    # user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
-    #                                  null=True, blank=True, related_name='orders')
+    # user_profile = models.ForeignKey(
+    # UserProfile,
+    # on_delete=models.SET_NULL,
+    # null=True,
+    # blank=True,
+    # related_name='orders'
+    # )
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
@@ -35,7 +40,8 @@ class Order(models.Model):
 
     def _generate_order_number(self):
         """
-        Generate a random, unique order number (a random, 32 character string ) using UUID
+        Generate a random, unique order number
+        (a random, 32 character string ) using UUID
         """
         return uuid.uuid4().hex.upper()
 
@@ -68,15 +74,25 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
-    order = models.ForeignKey(Order, null=False, blank=False,
-                              on_delete=models.CASCADE, related_name='lineitems')
+    order = models.ForeignKey(
+        Order,
+        null=False,
+        blank=False,
+        on_delete=models.CASCADE,
+        related_name='lineitems'
+    )
     book = models.ForeignKey(
         Book, null=False, blank=False, on_delete=models.CASCADE)
     book_option = models.CharField(
         max_length=1, null=True, blank=True)  # paperback (P), hardback (H)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
-        max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+        max_digits=6,
+        decimal_places=2,
+        null=False,
+        blank=False,
+        editable=False
+    )
 
     def save(self, *args, **kwargs):
         """
