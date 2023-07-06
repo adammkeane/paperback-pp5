@@ -58,6 +58,7 @@ card.addEventListener('change', function (event) {
 //     card.update({ 'disabled': true });
 //     $('#submit-button').attr('disabled', true);
 
+// // for the spinner overlay
 // $('#payment-form').fadeToggle(100);
 // $('#loading-overlay').fadeToggle(100);
 
@@ -109,8 +110,11 @@ card.addEventListener('change', function (event) {
 //                     </span>
 //                     <span>${result.error.message}</span>`;
 //                 $(errorDiv).html(html);
+//                 
+//                 // for the spinner overlay
 //                 $('#payment-form').fadeToggle(100);
 //                 $('#loading-overlay').fadeToggle(100);
+// 
 //                 card.update({ 'disabled': false });
 //                 $('#submit-button').attr('disabled', false);
 //             } else {
