@@ -84,7 +84,7 @@ class OrderLineItem(models.Model):
     book = models.ForeignKey(
         Book, null=False, blank=False, on_delete=models.CASCADE)
     book_option = models.CharField(
-        max_length=1, null=True, blank=True)  # paperback (P), hardback (H)
+        max_length=9, null=True, blank=True)  # paperback (P), hardback (H)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(
         max_digits=6,
@@ -103,4 +103,4 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'Book: {self.book.name} - {self.book.id} on order {self.order.order_number}'
+        return f'Book: {self.book.name} on order {self.order.order_number}'
