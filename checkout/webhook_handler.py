@@ -79,8 +79,8 @@ class StripeWH_Handler:
                     street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    # original_bag=bag,
-                    # stripe_pid=pid,
+                    original_bag=bag,
+                    stripe_pid=pid,
                 )
                 order_exists = True
                 break
@@ -106,8 +106,8 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
-                    # original_bag=bag,
-                    # stripe_pid=pid,
+                    original_bag=bag,
+                    stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
                     book = Book.objects.get(id=item_id)
