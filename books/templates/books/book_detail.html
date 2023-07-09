@@ -30,25 +30,25 @@
             <h1 class="card-body text-center">{{ book.name }}</h1>
             <p class="text-center">{{ book.avg_rating }} <i class="fa-regular fa-star"></i></p>
             <div class="card-body text-center">{{ book.description }}</div>
+            <h2 class="card-title card-body text-center">€{{ book.price }}</h2>
         </div>
     </div>
     <div class="row no-gutters">
-        <form class="form card-body d-flex justify-content-center" action="{% url 'add_to_bag' book.id %}"
-            method="POST">
+        <form class="form card-body d-flex" action="{% url 'add_to_bag' book.id %}" method="POST">
             {% csrf_token %}
             <div class="form-row">
                 {% with book.has_options as s %}
                 {% if s %}
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <span class="pr-2"><strong>Option</strong></span>
+                <div class="col-12 d-flex">
+                    <span class="pr-3 my-auto"><strong>Option</strong></span>
                     <select class="form-control rounded-0 w-50 d-inline-flex" name="book_option" id='id_book_option'>
                         <option value="paperback">Paperback</option>
                         <option value="hardback">Hardback</option>
                     </select>
                 </div>
                 {% endif %}
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="form-group w-50">
+                <div class="col-12">
+                    <div class="form-group w-75">
                         <div class="input-group input-group-{{ book.id }} mt-3">
                             <div class="input-group-prepend">
                                 <span class="align-middle"><strong>Quantity</strong></span>
@@ -73,21 +73,20 @@
                     </div>
                 </div>
 
-                <div class="col-12 text-center">
-                    <a href="{% url 'books' %}" class="btn btn-outline-black rounded-0">
+                <div class="col-12 mt-3">
+                    <a href="{% url 'books' %}" class="btn rounded-0 pl-0">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                    <input type="submit" class="btn btn-black rounded-0 text-uppercase" value="Add to Bag">
+                    <input type="submit" class="btn rounded-0 text-uppercase" value="Add to Bag">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 {% endwith %}
             </div>
         </form>
         <div class="col card-body text-center">
-            <h2 class="card-title">€{{ book.price }}</h2>
             <p class="mb-1"><strong> Rating: {{ book.avg_rating }} / 5 <i class="fa-regular fa-star"></i></strong>
             </p>
             <p class="mt-0">Reviews: {{ book.reviews_total }}</p>

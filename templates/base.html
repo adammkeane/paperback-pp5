@@ -44,18 +44,18 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
         <a class="navbar-brand align-middle" href="{% url 'home' %}">PaperBack</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto align-middle">
-                <li class="nav-item">
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item my-auto">
                     <a class="nav-link" href="{% url 'home' %}">Home </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown my-auto">
                     <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
                         aria-expanded="false">
                         Books
@@ -70,9 +70,29 @@
                         {% endif %}
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+            </ul>
+        </div> -->
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <form method="GET" action="{% url 'books' %}">
+                <div class="input-group w-100">
+                    <input class="form-control rounded border-dark" type="text" name="q"
+                        placeholder="Search our books :)">
+                    <div class="input-group-append">
+                        <button class="form-control btn rounded" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown my-auto">
+                    <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-toggle="dropdown"
                         aria-expanded="false">
+                        <div><i class="fas fa-user fa-lg"></i></div>
                         Account
                     </a>
                     <div class="dropdown-menu">
@@ -87,16 +107,16 @@
                         {% endif %}
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                <li class="nav-item my-auto">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link"
                         href="{% url 'view_bag' %}">
                         <div class="text-center">
-                            <div><i class="fas fa-shopping-bag fa-lg" style="color: #ffffff;"></i></div>
-                            <p class="my-0" style="color: #ffffff;">
+                            <div><i class="fas fa-shopping-bag fa-lg" style="color: #000000;"></i></div>
+                            <p class="my-0" style="color: #000000;">
                                 {% if grand_total %}
-                                ${{ grand_total|floatformat:2 }}
+                                €{{ grand_total|floatformat:2 }}
                                 {% else %}
-                                $0.00
+                                €0.00
                                 {% endif %}
                             </p>
                         </div>
@@ -104,21 +124,15 @@
                 </li>
             </ul>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="GET" action="{% url 'books' %}">
-                <div class="input-group w-100">
-                    <input class="form-control rounded" type="text" name="q" placeholder="Search our books :)">
-                    <div class="input-group-append">
-                        <button class="form-control btn btn-black border rounded" type="submit">
-                            <span class="icon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
     </nav>
+    <div id="banner" class="row mb-4 py-2 flex-row justify-content-center">
+        <div class="col my-auto text-right">
+            <a href="{% url 'home' %}">Home</a>
+        </div>
+        <div class="col my-auto text-left">
+            <a href="{% url 'books' %}">All Books</a>
+        </div>
+    </div>
 
     {% block page_header %}
     {% endblock %}
@@ -148,8 +162,8 @@
     {% endif %}
 
     <!-- Footer -->
-    <footer class="navbar bg-dark mt-auto justify-content-center py-3">
-        <p id="footer-copyright">&copy;2023 PaperBack</p>
+    <footer id="footer-copyright" class="navbar mt-auto justify-content-center py-3">
+        <p>&copy;2023 PaperBack</p>
     </footer>
 
     {% block postloadjs %}
