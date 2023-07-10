@@ -97,7 +97,7 @@
                     </a>
                     <div class="dropdown-menu">
                         {% if user.is_authenticated %}
-                        <a class="dropdown-item" href="">Profile Page ({{ user }})</a>
+                        <a class="dropdown-item" href="{% url 'profile' %}">Profile Page ({{ user }})</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a>
                         {% else %}

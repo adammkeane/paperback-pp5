@@ -11,7 +11,7 @@ from checkout.models import Order
 # @login_required
 def profile(request):
     """ Display the user's profile. """
-    # profile = get_object_or_404(UserProfile, user=request.user)
+    profile = get_object_or_404(UserProfile, user=request.user)
 
     # if request.method == 'POST':
     #     form = UserProfileForm(request.POST, instance=profile)
@@ -31,6 +31,7 @@ def profile(request):
     context = {
         #     'form': form,
         #     'orders': orders,
+        'profile': profile,
         #     'on_profile_page': True
     }
 
