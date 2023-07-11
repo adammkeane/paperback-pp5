@@ -31,7 +31,7 @@ def all_books(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
 
-            books = books.order_by(sortkey) 
+            books = books.order_by(sortkey)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -95,33 +95,34 @@ def add_book(request):
 
 
 # @login_required
-# def edit_book(request, book_id):
-#     """ Edit a book in the store """
-#     if not request.user.is_superuser:
-#         messages.error(request, 'Sorry, only store owners can do that.')
-#         return redirect(reverse('home'))
+def edit_book(request, book_id):
+    """ Edit a book in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
-#     book = get_object_or_404(Book, pk=book_id)
-#     if request.method == 'POST':
-#         form = BookForm(request.POST, request.FILES, instance=book)
-#         if form.is_valid():
-#             form.save()
-#             messages.success(request, 'Successfully updated book!')
-#             return redirect(reverse('book_detail', args=[book.id]))
-#         else:
-#             messages.error(
-#                 request, 'Failed to update book. Please ensure the form is valid.')
-#     else:
-#         form = BookForm(instance=book)
-#         messages.info(request, f'You are editing {book.name}')
+    book = get_object_or_404(Book, pk=book_id)
+    if request.method == 'POST':
+        form = BookForm(request.POST, request.FILES, instance=book)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated book!')
+            return redirect(reverse('book_detail', args=[book.id]))
+        else:
+            messages.error(
+                request,
+                'Failed to update book. Please ensure the form is valid.')
+    else:
+        form = BookForm(instance=book)
+        messages.info(request, f'You are editing {book.name}')
 
-#     template = 'books/edit_book.html'
-#     context = {
-#         'form': form,
-#         'book': book,
-#     }
+    template = 'books/edit_book.html'
+    context = {
+        'form': form,
+        'book': book,
+    }
 
-#     return render(request, template, context)
+    return render(request, template, context)
 
 
 # @login_required
