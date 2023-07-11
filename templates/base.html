@@ -97,6 +97,10 @@
                     </a>
                     <div class="dropdown-menu">
                         {% if user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'add_book' %}" class="dropdown-item">Add Book</a>
+                        <div class="dropdown-divider"></div>
+                        {% endif %}
                         <a class="dropdown-item" href="{% url 'profile' %}">Profile Page ({{ user }})</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a>
@@ -125,12 +129,12 @@
             </ul>
         </div>
     </nav>
-    <div id="banner" class="row mb-4 py-2 flex-row justify-content-center">
+    <div id="banner" class="row no-gutters mb-4 py-2 flex-row justify-content-center">
         <div class="col my-auto text-right">
-            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'home' %}" class="px-2">Home</a>
         </div>
         <div class="col my-auto text-left">
-            <a href="{% url 'books' %}">Books</a>
+            <a href="{% url 'books' %}" class="px-2">Books</a>
         </div>
     </div>
 
