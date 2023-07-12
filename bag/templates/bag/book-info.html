@@ -1,0 +1,4 @@
+<p class="my-0"><strong>{{ item.book.name }}</strong></p>
+<p class="my-0"><strong>Option: </strong>{% if item.book.has_options %}
+    {{ item.option|upper}}{% else %}N/A{% endif %}
+</p>
