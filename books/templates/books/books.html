@@ -67,6 +67,18 @@
                     </p>
                     <p class="mt-0">Reviews: {{ book.reviews_total }}</p>
                 </div>
+                <div class="card-footer bg-white pt-0 border-0">
+                    <div class="row">
+                        <div class="col">
+                            {% if request.user.is_superuser %}
+                            <small class="">
+                                <a href="{% url 'edit_book' book.id %}">Edit</a> |
+                                <a class="text-danger text-right" href="{% url 'delete_book' book.id %}">Delete</a>
+                            </small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         {% endfor %}

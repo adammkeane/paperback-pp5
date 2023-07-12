@@ -126,13 +126,13 @@ def edit_book(request, book_id):
 
 
 # @login_required
-# def delete_book(request, book_id):
-#     """ Delete a book from the store """
-#     if not request.user.is_superuser:
-#         messages.error(request, 'Sorry, only store owners can do that.')
-#         return redirect(reverse('home'))
+def delete_book(request, book_id):
+    """ Delete a book from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
 
-#     book = get_object_or_404(Book, pk=book_id)
-#     book.delete()
-#     messages.success(request, 'Book deleted!')
-#     return redirect(reverse('books'))
+    book = get_object_or_404(Book, pk=book_id)
+    book.delete()
+    messages.success(request, 'Book deleted!')
+    return redirect(reverse('books'))
