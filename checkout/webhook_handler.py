@@ -86,7 +86,7 @@ class StripeWH_Handler:
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    full_name__iexact='ff',
+                    full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
                     country__iexact=shipping_details.address.country,
