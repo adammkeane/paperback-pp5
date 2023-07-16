@@ -9,6 +9,10 @@ h1 {
     font-size: 2rem;
 }
 
+a {
+    color: #000;
+}
+
 .btt-link,
 .update-link,
 .remove-item {
@@ -35,8 +39,7 @@ h1 {
     display: none;
 }
 
-.bg-light,
-.btn-primary {
+.bg-light {
     background-color: #ffffff !important;
     border-color: #000000 !important;
 }
@@ -51,9 +54,19 @@ h1 {
     color: #ffffff;
 }
 
-.btn-primary:hover {
-    background-color: #23474D !important;
-    border-color: #23474D !important;
+.btn-primary {
+    background-color: #ffffff !important;
+    border-color: #000000 !important;
+    color: #000;
+}
+
+
+
+.btn-primary:hover,
+#mc_embed_signup .button:hover {
+    background-color: rgba(0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.75) !important;
+    color: #ffff;
 }
 
 .btn-danger {
@@ -69,6 +82,7 @@ h1 {
 .dropdown-item:active,
 .reverse-bg {
     background-color: #000000;
+    color: #fff;
 }
 
 .navbar-brand,
@@ -175,10 +189,12 @@ input[name='q'] {
     background-color: #000000;
 } */
 
-#bg-black {
+#bg-black,
+#bg-black a {
     background-color: #000000;
     color: #ffffff;
 }
+
 
 /* Allauth form formatting */
 
@@ -267,5 +283,11 @@ input[name='q'] {
 #mc_embed_signup {
     background: #fff;
     clear: left;
-    width: px;
+}
+
+#mc_embed_signup .button {
+    background-color: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000;
+    font-size: 1rem;
 }
