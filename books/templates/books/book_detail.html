@@ -103,7 +103,7 @@
     <div class="reverse-bg rounded">
         <p class="mx-4 mt-4 reverse-bg py-2">Reviews</p>
     </div>
-    <a href="" class="btn btn-primary mt-3">Add Review</a>
+    <a href="{% url 'book_review_create' book.pk %}" class="btn btn-primary mt-3">Add Review</a>
     {% for review in reviews %}
     <div class="card mt-4">
         <div class="row no-gutters">

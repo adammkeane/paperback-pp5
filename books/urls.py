@@ -7,4 +7,8 @@ urlpatterns = [
     path('add/', views.add_book, name='add_book'),
     path('edit/<int:book_id>/', views.edit_book, name='edit_book'),
     path('delete/<int:book_id>/', views.delete_book, name='delete_book'),
+    path(
+        'book_review_create/<slug:book_id>/', views.BookReviewCreate.as_view(),
+        name='book_review_create'
+    ),
 ]

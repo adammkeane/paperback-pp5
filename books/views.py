@@ -3,10 +3,11 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, Avg
 from django.views import generic, View
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.db.models.functions import Lower
 
 from .models import Book
-from .forms import BookForm
+from .forms import BookForm, BookReviewForm
 
 
 def all_books(request):
@@ -144,3 +145,50 @@ def delete_book(request, book_id):
     book.delete()
     messages.success(request, 'Book deleted!')
     return redirect(reverse('books'))
+
+
+class BookReviewCreate(UserPassesTestMixin, View):
+    """View to handle book review creation"""
+
+    def get(self, request, book_id, *args, **kwargs):
+        return render(
+            request,
+            'books/book_review_create.html',
+            {
+                'book_form': BookReviewForm(),
+                'book_id': book_id
+            },
+        )
+
+    def post(self, request, book_id, *args, **kwargs):
+        book_form = BookReviewForm(request.POST)
+
+        if book_form.is_valid():
+            """If review form is valid, add review to database"""
+            entry = book_form.save(commit=False)
+            entry.username = request.user
+            # entry.slug = slugify(f'{entry.title}-{entry.username}')
+            book = get_object_or_404(Book.objects, id=book_id)
+            entry.book = book
+            entry.save()
+
+            return render(
+                request,
+                'books/book_review_create_success.html',
+                {
+                    'book': book,
+                },
+            )
+        else:
+            """If review form is not valid, return to form page"""
+            return render(
+                request,
+                'books/book_review_create.html',
+                {
+                    'book_form': BookReviewForm(data=request.POST),
+                },
+            )
+
+    def test_func(self):
+        """Mixin Test"""
+        return self.request.user.is_authenticated

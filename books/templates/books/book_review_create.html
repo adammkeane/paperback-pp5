@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Add Review - PaperBack{% endblock title %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+<div class="container">
+    <form action="{% url 'book_review_create' book_id %}" method="post">
+        {{ book_form | crispy | safe }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary mt-2">Add Review</button>
+    </form>
+</div>
+
+{%endblock%}
