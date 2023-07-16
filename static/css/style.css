@@ -71,21 +71,6 @@ h1 {
     background-color: #000000;
 }
 
-a,
-a:hover,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-.page-link,
-.page-link:hover {
-    color: #000000;
-}
-
 .navbar-brand,
 h1 span,
 .brand-h1 {
@@ -183,11 +168,16 @@ input[name='q'] {
 }
 
 /* Footer */
-#footer-copyright,
+/* #footer-copyright,
 #footer-copyright p {
     color: #ffffff;
     margin-bottom: 0;
     background-color: #000000;
+} */
+
+#bg-black {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Allauth form formatting */
@@ -277,6 +267,5 @@ input[name='q'] {
 #mc_embed_signup {
     background: #fff;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
     width: px;
 }
