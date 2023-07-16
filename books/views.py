@@ -58,9 +58,16 @@ def all_books(request):
 def book_detail(request, book_id):
     """ View to show details of one book """
     book = get_object_or_404(Book, pk=book_id)
+    reviews = book.book_review.order_by('-created_on')
+    if len(reviews) > 0:
+        no_reviews = False
+    else:
+        no_reviews = True
 
     context = {
         'book': book,
+        'reviews': reviews,
+        'no_reviews': no_reviews
     }
 
     return render(request, 'books/book_detail.html', context)
