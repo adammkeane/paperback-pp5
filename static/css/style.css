@@ -39,11 +39,12 @@ h1 {
 .btn-primary {
     background-color: #ffffff !important;
     border-color: #000000 !important;
-    border-bottom: 1px solid;
 }
 
 #banner {
     background-color: #000000;
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
 }
 
 #banner a {
@@ -97,6 +98,10 @@ h1 span,
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+input[name='q'] {
+    border: 1px dashed;
 }
 
 /* ------------------------------- bootstrap toasts */
