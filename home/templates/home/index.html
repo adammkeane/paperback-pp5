@@ -5,14 +5,42 @@
 
 {% block content %}
 <div class="container text-center">
-    <p class="mx-4 mb-n5"><em>Welcome to</em></p>
-    <h1 class="mb-n2 mx-4"><br><span>PaperBack</span></h1>
+    <h1 class="mb-n2 mx-4 mt-3"><span>PaperBack</span></h1>
     <p class="mx-4 mt-2"><strong><em>We're bringing paper back.</em></strong></p>
     <p class="mx-4">
-        For the readers of real paper, we've got you covered.
+        For the readers of real paper, we've got you covered. Check out our our full stock:
+    <div>
+        <a href="{% url 'books' %}" class="btn btn-primary">All Books</a>
+    </div>
+
     </p>
-    <p class="mx-4">
-        Check out our selection of books for sale.
+    <p class="mx-4 mt-5">
+        Latest addtions:
     </p>
+    <div class="row no-gutters">
+        {% for book in books %}
+        <div class="col-lg-4 col-md-6 card border-0">
+            <div class="card-body pb-0 p-lg-4 text-center">
+                {% if book.image %}
+                <a href="{% url 'book_detail' book.id %}">
+                    <img class="rounded img-fluid bk-img-h border" src="{{ book.image.url }}" alt="{{ book.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'book_detail' book.id %}">
+                    <img class="rounded img-fluid border" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body text-center mb-0 pb-0">
+                    <a href="{% url 'book_detail' book.id %}">
+                        <p class="mb-3">{{ book.name }}</p>
+                    </a>
+                </div>
+                <div class="card-body text-center mt-1 pt-1">
+                    <p class="mb-1"><strong>€{{ book.price }}</strong></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {%endblock%}
