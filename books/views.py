@@ -167,7 +167,6 @@ class BookReviewCreate(UserPassesTestMixin, View):
             """If review form is valid, add review to database"""
             entry = book_form.save(commit=False)
             entry.username = request.user
-            # entry.slug = slugify(f'{entry.title}-{entry.username}')
             book = get_object_or_404(Book.objects, id=book_id)
             entry.book = book
             entry.save()
