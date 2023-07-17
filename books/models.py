@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 
 class Book(models.Model):
     name = models.CharField(max_length=254)
-    author = models.CharField(max_length=254, null=True)
     published_on = models.DateField(null=True, blank=True)
     description = models.TextField(max_length=10000)
     has_options = models.BooleanField(default=False, null=True, blank=True)
@@ -85,3 +84,15 @@ class BookReview(models.Model):
     def just_date_updated_on(self):
         """Simplfies date"""
         return self.updated_on.date()
+
+
+class Author(models.Model):
+    name = models.CharField(max_length=100, null=True)
+    books = models.ManyToManyField(Book)
+    bio = models.TextField(max_length=10000, blank=True)
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name

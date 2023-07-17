@@ -1,3 +1,15 @@
 from django.contrib import admin
+from .models import Contact
 
-# Register your models here.
+
+class ContactAdmin(admin.ModelAdmin):
+    ''' Class defying how info from the Contact model displays in Admin '''
+    list_display = (
+        'full_name',
+        'email',
+        'message',
+        'sent_on',
+    )
+
+
+admin.site.register(Contact, ContactAdmin)
