@@ -6,7 +6,7 @@ from django.views import generic, View
 from django.contrib.auth.mixins import UserPassesTestMixin
 from django.db.models.functions import Lower
 
-from .models import Book
+from .models import Book, Author
 from .forms import BookForm, BookReviewForm
 
 
@@ -191,3 +191,16 @@ class BookReviewCreate(UserPassesTestMixin, View):
     def test_func(self):
         """Mixin Test"""
         return self.request.user.is_authenticated
+
+
+def author(request, author_id):
+    """ View to show author page """
+    author = get_object_or_404(Author, pk=author_id)
+    books = author.books.all()
+
+    context = {
+        'author': author,
+        'books': books,
+    }
+
+    return render(request, 'books/author.html', context)

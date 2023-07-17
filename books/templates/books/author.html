@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ author.name }} - PaperBack{% endblock title %}
+
+{% block content %}
+<div class="container text-center px-4">
+    <div class="row no-gutters">
+        <div class="col">
+            <div class="card-body text-center">
+                <h1 class=" text-center">{{ author.name }}</h1>
+            </div>
+            <p class="text-center">{{ author.bio }}</p>
+            {% if books %}
+            <p class=" text-center mt-5">
+                <strong>
+                    Books
+                </strong>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row no-gutters">
+        {% for book in books %}
+        <div class="col-lg-4 col-md-6 card border-0">
+            <div class="card-body pb-0 p-lg-4 text-center">
+                {% if book.image %}
+                <a href="{% url 'book_detail' book.id %}">
+                    <img class="rounded img-fluid bk-img-h border" src="{{ book.image.url }}" alt="{{ book.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'book_detail' book.id %}">
+                    <img class="rounded img-fluid border" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body text-center mb-0 pb-0">
+                    <a href="{% url 'book_detail' book.id %}">
+                        <p class="mb-3">{{ book.name }}</p>
+                    </a>
+                </div>
+                <div class="card-body text-center mt-1 pt-1">
+                    <p class="mb-1"><strong>€{{ book.price }}</strong></p>
+                    <p class="mb-1">Rating: {{ book.avg_rating }}
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p class="mt-0">Reviews: {{ book.reviews_total }}</p>
+                </div>
+                <div class="card-footer bg-white pt-0 border-0">
+                    <div class="row">
+                        <div class="col">
+                            {% if request.user.is_superuser %}
+                            <small class="">
+                                <a href="{% url 'edit_book' book.id %}">Edit</a> |
+                                <a class="text-danger text-right" href="{% url 'delete_book' book.id %}">Delete</a>
+                            </small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{%endblock%}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'books/includes/quantity_input_script.html' %}
+{% endblock %}

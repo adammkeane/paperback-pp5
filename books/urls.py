@@ -11,4 +11,5 @@ urlpatterns = [
         'book_review_create/<slug:book_id>/', views.BookReviewCreate.as_view(),
         name='book_review_create'
     ),
+    path('author/<int:author_id>/', views.author, name='author'),
 ]
