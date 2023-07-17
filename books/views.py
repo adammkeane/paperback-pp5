@@ -42,7 +42,8 @@ def all_books(request):
                 return redirect(reverse('books'))
 
             queries = Q(name__icontains=query) | Q(
-                description__icontains=query) | Q(author__icontains=query)
+                description__icontains=query) | Q(
+                    author__name__icontains=query)
             books = books.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -59,6 +60,7 @@ def all_books(request):
 def book_detail(request, book_id):
     """ View to show details of one book """
     book = get_object_or_404(Book, pk=book_id)
+    authors = book.author_set.all()
     reviews = book.book_review.order_by('-created_on')
     if len(reviews) > 0:
         no_reviews = False
@@ -68,7 +70,8 @@ def book_detail(request, book_id):
     context = {
         'book': book,
         'reviews': reviews,
-        'no_reviews': no_reviews
+        'no_reviews': no_reviews,
+        'authors': authors,
     }
 
     return render(request, 'books/book_detail.html', context)

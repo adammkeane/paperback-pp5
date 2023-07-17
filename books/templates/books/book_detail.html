@@ -28,6 +28,13 @@
         <div class="col-lg-8 col-md-6 border-0">
             <div class="card-body text-center">
                 <h1 class=" text-center">{{ book.name }}</h1>
+                {% if authors %}
+                {% for author in authors %}
+                <a href="{% url 'author' author.id %}">
+                    <p class=" text-center">{{ author.name }}</p>
+                </a>
+                {% endfor %}
+                {% endif %}
                 {% if request.user.is_superuser %}
                 <small>
                     <a href="{% url 'edit_book' book.id %}">Edit</a> |
