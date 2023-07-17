@@ -55,7 +55,7 @@
                 {% if s %}
                 <div class="col-12 d-flex">
                     <span class="pr-3 my-auto"><strong>Option</strong></span>
-                    <select class="form-control rounded-0 w-50 d-inline-flex" name="book_option" id='id_book_option'>
+                    <select class="form-control rounded w-50 d-inline-flex" name="book_option" id='id_book_option'>
                         <option value="paperback">Paperback</option>
                         <option value="hardback">Hardback</option>
                     </select>
@@ -66,17 +66,17 @@
                         <div class="input-group input-group-{{ book.id }} mt-3">
                             <div class="input-group-prepend">
                                 <span class="align-middle"><strong>Quantity</strong></span>
-                                <button class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ book.id }} pl-2"
+                                <button class="decrement-qty btn btn-black rounded decrement-qty_{{ book.id }} pl-2"
                                     data-item_id="{{ book.id }}">
                                     <span class="icon">
                                         <i class="fas fa-minus"></i>
                                     </span>
                                 </button>
                             </div>
-                            <input class="form-control qty_input id_qty_{{ book.id }}" type="number" name="quantity"
-                                value="1" min="1" max="99" data-item_id="{{ book.id }}">
+                            <input class="form-control qty_input id_qty_{{ book.id }} rounded" type="number"
+                                name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}">
                             <div class="input-group-append">
-                                <button class="increment-qty btn btn-black rounded-0 increment-qty_{{ book.id }}"
+                                <button class="increment-qty btn btn-black rounded increment-qty_{{ book.id }}"
                                     data-item_id="{{ book.id }}">
                                     <span class="icon">
                                         <i class="fas fa-plus"></i>
@@ -88,13 +88,10 @@
                 </div>
 
                 <div class="col-12 mt-3">
-                    <a href="{% url 'books' %}" class="btn rounded-0 pl-0">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                    <a href="{% url 'books' %}" class="btn btn-primary">
+                        <span>Keep Shopping</span>
                     </a>
-                    <input type="submit" class="btn rounded-0 text-uppercase" value="Add to Bag">
+                    <input type="submit" class="btn btn-primary" value="Add to Bag">
                 </div>
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 {% endwith %}
