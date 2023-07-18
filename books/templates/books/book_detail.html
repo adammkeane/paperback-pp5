@@ -36,7 +36,9 @@
                 </small>
                 {% endif %}
             </div>
-            <p class="text-center">{{ book.avg_rating }} <i class="fa-regular fa-star"></i></p>
+            <p class="text-center">{{ book.avg_rating }} <i class="fa-regular fa-star"></i>
+                ({{ book.reviews_total }})
+            </p>
             <div class="card-body text-center">{{ book.description }}</div>
             <h2 class="card-title card-body text-center">€{{ book.price }}</h2>
         </div>
@@ -81,8 +83,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 mt-3">
-                    <a href="{% url 'books' %}" class="btn btn-primary">
+                <div class="col-12 mt-3 text-left">
+                    <a href="{% url 'books' %}" class="btn btn-primary mr-1">
                         <span>Keep Shopping</span>
                     </a>
                     <input type="submit" class="btn btn-primary" value="Add to Bag">
@@ -91,11 +93,6 @@
                 {% endwith %}
             </div>
         </form>
-        <div class="col card-body text-center">
-            <p class="mb-1"><strong> Rating: {{ book.avg_rating }} / 5 <i class="fa-regular fa-star"></i></strong>
-            </p>
-            <p class="mt-0">Reviews: {{ book.reviews_total }}</p>
-        </div>
     </div>
 </div>
 <div class="container-fluid px-0 text-center">
@@ -112,7 +109,7 @@
                 <div class="card-body">
                     <p class="mb-2"><strong>{{ review.title }}</strong></p>
                     <p class="mb-2">{{ review.description }}</p>
-                    <p><strong> Rating: {{ review.get_rating_display }} <i class="fa-regular fa-star"></i></strong></p>
+                    <p><strong>{{ review.get_rating_display }} <i class="fa-regular fa-star"></i></strong></p>
                 </div>
                 <div class="card-footer row no-gutters">
                     <div class="col text-left">

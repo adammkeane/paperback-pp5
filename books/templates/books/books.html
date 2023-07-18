@@ -74,10 +74,10 @@
                 </div>
                 <div class="card-body text-center mt-1 pt-1">
                     <p class="mb-1"><strong>€{{ book.price }}</strong></p>
-                    <p class="mb-1">Rating: {{ book.avg_rating }}
-                        <i class="fa-regular fa-star"></i>
+                    <p class="mb-1">{{ book.avg_rating }}
+                        <i class="fa-regular fa-star"></i> 
+                        ({{ book.reviews_total }})
                     </p>
-                    <p class="mt-0">Reviews: {{ book.reviews_total }}</p>
                 </div>
             </div>
         </div>
