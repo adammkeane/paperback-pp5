@@ -48,35 +48,13 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center justify-content-lg-between">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
         <a class="navbar-brand align-middle" href="{% url 'home' %}">PaperBack</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item my-auto">
-                    <a class="nav-link" href="{% url 'home' %}">Home </a>
-                </li>
-                <li class="nav-item dropdown my-auto">
-                    <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        Books
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{% url 'books' %}">Services</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'books' %}">Requests</a>
-                        {% if user.is_authenticated %}
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'books' %}">Create Post</a>
-                        {% endif %}
-                    </div>
-                </li>
-            </ul>
-        </div> -->
-        <div class="col-12 col-lg-4 my-auto py-3 py-lg-0">
+        </button>
+        <div class="col-12 col-lg-4 my-auto py-3 py-lg-0 d-none d-lg-block">
             <form method="GET" action="{% url 'books' %}">
                 <div class="input-group w-100">
                     <input class="form-control rounded border-dark" type="text" name="q"
@@ -91,7 +69,62 @@
                 </div>
             </form>
         </div>
-        <div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown my-auto">
+                    <a class="nav-link dropdown-toggle text-center" href="" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        <div><i class="fas fa-user fa-lg"></i></div>
+                        Account
+                    </a>
+                    <div class="dropdown-menu">
+                        {% if user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'add_book' %}" class="dropdown-item">Add Book</a>
+                        <div class="dropdown-divider"></div>
+                        {% endif %}
+                        <a class="dropdown-item" href="{% url 'profile' %}">Profile Page ({{ user }})</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a>
+                        {% else %}
+                        <a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
+                        {% endif %}
+                    </div>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="{% if grand_total %}text-info{% else %}{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-lg" style="color: #000000;"></i></div>
+                            <p class="my-0" style="color: #000000;">
+                                {% if grand_total %}
+                                €{{ grand_total|floatformat:2 }}
+                                {% else %}
+                                €0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item my-auto col-12 col-lg-4 my-auto py-3 py-lg-0 d-lg-none">
+                    <form method="GET" action="{% url 'books' %}">
+                        <div class="input-group w-100">
+                            <input class="form-control rounded border-dark" type="text" name="q"
+                                placeholder="Search our books :)">
+                            <div class="input-group-append">
+                                <button class="form-control btn rounded" type="submit">
+                                    <span class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <!-- <div>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown my-auto mx-2">
                     <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-toggle="dropdown"
@@ -130,7 +163,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </nav>
     <div id="banner" class="row no-gutters mb-4 py-2 flex-row justify-content-center text-center">
         <div class="col-3 col-sm-2 col-lg-1 my-auto">

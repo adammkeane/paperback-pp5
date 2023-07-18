@@ -25,6 +25,14 @@ a {
 }
 
 /* Nav Bar */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-toggler {
+    font-size: 1rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0);
 }
@@ -194,12 +202,6 @@ input[type=number] {
 }
 
 /* Footer */
-/* #footer-copyright,
-#footer-copyright p {
-    color: #ffffff;
-    margin-bottom: 0;
-    background-color: #000000;
-} */
 
 #bg-black,
 #bg-black a {
@@ -265,7 +267,7 @@ input[type=number] {
 
 /* Book Admin Form */
 
-/* .btn-file {
+.btn-file {
     position: relative;
     overflow: hidden;
 }
@@ -280,7 +282,7 @@ input[type=number] {
     cursor: pointer;
 }
 
-.custom-checkbox .custom-control-label::before {
+/* .custom-checkbox .custom-control-label::before {
     border-radius: 0;
     border-color: #dc3545;
 }
