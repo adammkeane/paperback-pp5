@@ -174,13 +174,8 @@ class BookReviewCreate(UserPassesTestMixin, View):
             entry.book = book
             entry.save()
 
-            return render(
-                request,
-                'books/book_review_create_success.html',
-                {
-                    'book': book,
-                },
-            )
+            messages.success(request, 'Review Added!')
+            return redirect(reverse('book_detail', args=[book.id]))
         else:
             """If review form is not valid, return to form page"""
             return render(
