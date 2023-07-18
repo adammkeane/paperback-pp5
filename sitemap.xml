@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/bag/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/contact/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/11/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/2/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/3/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/5/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/4/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/1/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/10/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/14/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/12/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/13/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/15/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/4/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/11/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/11/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/2/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/6/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/3/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/9/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/5/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/2/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/4/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/1/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/1/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/10/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/10/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/5/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/14/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/8/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/12/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/3/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/13/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/books/author/7/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=/books/book_review_create/15/</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F11%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F2%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F3%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F5%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F4%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F1%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F10%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F14%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F12%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F13%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/signup/?next=%2Fbooks%2Fbook_review_create%2F15%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F11%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F2%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F3%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F5%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F4%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F1%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F10%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F14%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F12%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F13%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://paperback-pp5-4d817902330a.herokuapp.com/accounts/login/?next=%2Fbooks%2Fbook_review_create%2F15%2F</loc>
+  <lastmod>2023-07-18T20:38:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>

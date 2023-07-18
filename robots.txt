@@ -1,0 +1,4 @@
+User-agents: *
+Disallow:
+
+Sitemap: https://paperback-pp5-4d817902330a.herokuapp.com/sitemap.xml
