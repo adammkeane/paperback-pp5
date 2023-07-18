@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 
 class Book(models.Model):
     name = models.CharField(max_length=254)
-    published_on = models.DateField(null=True, blank=True)
     description = models.TextField(max_length=10000)
     has_options = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
