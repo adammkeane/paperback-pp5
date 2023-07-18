@@ -33,6 +33,10 @@ a {
     font-size: 1rem;
 }
 
+.dropdown-menu {
+    min-width: 9rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0);
 }
