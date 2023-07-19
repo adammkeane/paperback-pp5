@@ -1,8 +1,8 @@
 # PaperBack
 
-PaperBack is an online book store for those who enjoy reading physical books. 
+PaperBack is an online book store that specialising in stocking physical books. The target audience for the website would be people who like to read and who prefer reading physical books.
 
-The website can be accessed [here](https://paperback-pp5-4d817902330a.herokuapp.com/).
+[Click here to view website.](https://paperback-pp5-4d817902330a.herokuapp.com/)
 
 ![Mockup](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/mockup.PNG)
 
