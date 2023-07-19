@@ -8,23 +8,31 @@ PaperBack is an online book store that specialises in physical books. The target
 
 # Pages / Components
 
+## Home Page 
+
+![Home Page](docs/home.JPG) <br>
+    
+**Contains**:
+* Intro section - welcomes user to the site, tells them what the site does, and links to our selection of books.
+
+* Latest additions - displays the 3 most recent additions to the shop.
+
 ## Nav Bar 
 Repsonsively houses easy-to-reach, useful links for the user.
 
-Nav Bar Desktop <br>
+- Nav Bar Desktop <br>
 ![Nav Bar Desktop](docs/navbar.JPG)
 
-Nav Bar Mobile (closed) <br>
+- Nav Bar Mobile (closed) <br>
 ![Nav Bar Mobile (closed)](docs/navbar2.JPG)
 
-Nav Bar Mobile (open) <br>
+- Nav Bar Mobile (open) <br>
 ![Nav Bar Mobile (open)](docs/navbar3.JPG)
 
-
-Nav Bar Mobile (open & account dropdown) <br>
+- Nav Bar Mobile (open & account dropdown) <br>
 ![Nav Bar Mobile (open & account dropdown)](docs/navbar4.JPG)
 
-Contains:
+**Contains**:
 * Search bar - allows user to easily search letters/words found in the book titles, book descriptions, and author names.
 
 * Account dropdown - gives user access to sign in, sign out, registration and profile pages.
@@ -37,19 +45,12 @@ Contains:
 
 ![Footer](docs/footer.JPG) <br>
     
-Contains:
+**Contains**:
 * Social media links - Facebook links to a facebook page created for the ecommerce site. Youtube just links to youtube homepage for now. Both links contain the noopener and nofollow rel attributes.
 
 * Mailchimp newsletter sign up form - user can enter email to be added a newsletter mailing list.
         
-## Home Page 
 
-![Home Page](docs/home.JPG) <br>
-    
-Contains:
-* Intro section - welcomes user to the site, tells them what the site does, and links to our selection of books.
-
-* Latest additions - displays the 3 most recent additions to the shop.
 
 ## Welcome to Bookworm Paradise section
     * A small section welcoming users to the store. 
