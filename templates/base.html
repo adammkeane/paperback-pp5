@@ -124,46 +124,6 @@
                 </li>
             </ul>
         </div>
-        <!-- <div>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown my-auto mx-2">
-                    <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        <div><i class="fas fa-user fa-lg"></i></div>
-                        Account
-                    </a>
-                    <div class="dropdown-menu mb-2">
-                        {% if user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <a href="{% url 'add_book' %}" class="dropdown-item">Add Book</a>
-                        <div class="dropdown-divider"></div>
-                        {% endif %}
-                        <a class="dropdown-item" href="{% url 'profile' %}">Profile Page ({{ user }})</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a>
-                        {% else %}
-                        <a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-                        {% endif %}
-                    </div>
-                </li>
-                <li class="nav-item my-auto mx-2">
-                    <a class="{% if grand_total %}text-info{% else %}{% endif %} nav-link" href="{% url 'view_bag' %}">
-                        <div class="text-center">
-                            <div><i class="fas fa-shopping-bag fa-lg" style="color: #000000;"></i></div>
-                            <p class="my-0" style="color: #000000;">
-                                {% if grand_total %}
-                                €{{ grand_total|floatformat:2 }}
-                                {% else %}
-                                €0.00
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div> -->
     </nav>
     <div id="banner" class="row no-gutters mb-4 py-2 flex-row justify-content-center text-center">
         <div class="col-3 col-sm-2 col-lg-1 my-auto">
@@ -180,7 +140,7 @@
     {% block page_header %}
     {% endblock %}
 
-    <main class="flex-shrink-0 mb-4" role="main">
+    <main class="flex-shrink-0 mb-4">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
@@ -276,12 +236,12 @@
 
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
 
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script>
         (function ($) {
             window.fnames = new Array();
             window.ftypes = new Array();
