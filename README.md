@@ -1,43 +1,57 @@
-# PaperBack
+# PaperBack - "We're bring paper back."
 
-PaperBack is an online book store that specialising in stocking physical books. The target audience for the website would be people who like to read and who prefer reading physical books.
+PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. 
 
 [Click here to view website.](https://paperback-pp5-4d817902330a.herokuapp.com/)
 
-![Mockup](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/mockup.PNG)
+![Mockup](docs/mockup.PNG)
 
-## Features
+# Pages / Components
 
-### Existing features
+## Nav Bar 
+Repsonsively houses easy-to-reach, useful links for the user.
 
-* Navigation Bar 
-    * Includes direct links to all parts of the website, allowing the user to easily navigate between them.
-        1. All users can see the folowing links in the navbar: Account and Cart (in top part of the navbar), Home, All Books, Genres, Newsletter and Contact Us (in bottom part of the navbar).
+Nav Bar Desktop
+![Nav Bar Desktop](docs/navbar.JPG)
 
-           ![Navigation](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/navbar.PNG) 
-        
-        2. All users can see the search bar, allowing them to search for any book.
+Nav Bar Mobile (closed)
+![Nav Bar Mobile (closed)](docs/navbar2.JPG)
 
-           ![Search-bar](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/search-bar.PNG) 
+Nav Bar Mobile (open)
+![Nav Bar Mobile (open)](docs/navbar3.JPG)
 
-        3. When logged OUT, the user can see the following links when clicking on the Account dropdown: Register, Login.
 
-           ![Navigation Logged Out](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/logged-out.PNG)
+Nav Bar Mobile (open & account dropdown)
+![Nav Bar Mobile (open & account dropdown)](docs/navbar4.JPG)
 
-        4. When logged IN, the user can see the following links when clicking on the Account dropdown: Management, Profile, Logout.
+Contains:
+* Search bar - allows user to easily search letters/words found in the book titles, book descriptions, and author names.
 
-           ![Navigation Logged In](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/logged-in.PNG)
+* Account dropdown - gives user access to sign in, sign out, registration and profile pages.
 
-        5. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
+* Shopping bag link - keeps track of user's shopping bag total for the current session, and acts as link to get to the shopping bag page.
 
-           ![Navigation Responsive](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/mobile-nav-shots.jpg)
-      
-* Landing page image with overlaying jumbotron
-    * The index.html page (Home) includes a background picture of books, with a button leading directly toe the shop where users can view all available books. 
+* Banner - allows users to quickly navigate to home, books, and contact form pages.
+
+## Footer 
+
+![Footer](docs/footer.JPG)
     
-      ![Jumbotron](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/landing-page.PNG)
+Contains:
+* Social media links - Facebook links to a facebook page created for the ecommerce site. Youtube just links to youtube homepage for now. Both links contain the noopener and nofollow rel attributes.
 
-* Welcome to Bookworm Paradise section
+* Mailchimp newsletter sign up form - user can enter email to be added a newsletter mailing list.
+        
+## Home Page 
+
+![Home Page](docs/home.JPG)
+    
+Contains:
+* Intro section - welcomes user to the site, tells them what the site does, and links to our selection of books.
+
+* Latest additions - displays the 3 most recent additions to the shop.
+
+## Welcome to Bookworm Paradise section
     * A small section welcoming users to the store. 
 
       ![Welcome](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/welcome.PNG)
