@@ -61,14 +61,14 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## Book Detail Page
 
-- Detail 1
-![Book Detail 1](docs/book-detail1.JPG) <br>
+- Detail 1 <br>
+![Book Detail 1](docs/book-detail1.JPG) 
 
-- Detail 2
-![Detail 2](docs/book-detail2.JPG) <br>
+- Detail 2 <br>
+![Detail 2](docs/book-detail2.JPG) 
 
-- Reviews
-![Reviews](docs/reviews1.JPG) <br>
+- Reviews <br>
+![Reviews](docs/reviews1.JPG) 
     
 **Contains**:
 * Book detail - includes cover image, title, author, review score/number of reviews in parenthesis and price. The author is a link the author page.
@@ -86,11 +86,11 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## Shopping Bag Page
 
-- Desktop
-![Shopping Bag Page Desktop](docs/bag1.JPG) <br>
+- Desktop <br>
+![Shopping Bag Page Desktop](docs/bag1.JPG) 
 
-- Mobile
-![Shopping Bag Page Desktop](docs/bag2.JPG) <br>
+- Mobile <br>
+![Shopping Bag Page Desktop](docs/bag2.JPG) 
     
 **Contains**:
 * Bag Summary - user can double check book options, quantity, and price before goign to checkout.
