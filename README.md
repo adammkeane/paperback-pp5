@@ -20,16 +20,16 @@ PaperBack is an online book store that specialises in physical books. The target
 ## Nav Bar 
 Repsonsively houses easy-to-reach, useful links for the user.
 
-- Nav Bar Desktop <br>
+- Desktop <br>
 ![Nav Bar Desktop](docs/navbar.JPG)
 
-- Nav Bar Mobile (closed) <br>
+- Mobile (closed) <br>
 ![Nav Bar Mobile (closed)](docs/navbar2.JPG)
 
-- Nav Bar Mobile (open) <br>
+- Mobile (open) <br>
 ![Nav Bar Mobile (open)](docs/navbar3.JPG)
 
-- Nav Bar Mobile (open & account dropdown) <br>
+- Mobile (open & account dropdown) <br>
 ![Nav Bar Mobile (open & account dropdown)](docs/navbar4.JPG)
 
 **Contains**:
@@ -61,14 +61,14 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## Book Detail Page
 
-- Book Detail 1
+- Detail 1
 ![Book Detail 1](docs/book-detail1.JPG) <br>
 
-- Book Detail 2
-![Book Detail 2](docs/book-detail2.JPG) <br>
+- Detail 2
+![Detail 2](docs/book-detail2.JPG) <br>
 
-- Book Detail 3 (reviews)
-![Book Detail 3 (reviews)](docs/reviews1.JPG) <br>
+- Reviews
+![Reviews](docs/reviews1.JPG) <br>
     
 **Contains**:
 * Book detail - includes cover image, title, author, review score/number of reviews in parenthesis and price. The author is a link the author page.
@@ -86,24 +86,38 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## Shopping Bag Page
 
-![Add Review Page](docs/reviews2.JPG) <br>
+- Desktop
+![Shopping Bag Page Desktop](docs/bag1.JPG) <br>
+
+- Mobile
+![Shopping Bag Page Desktop](docs/bag2.JPG) <br>
     
 **Contains**:
-* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+* Bag Summary - user can double check book options, quantity, and price before goign to checkout.
+
+* Update & remove item - allows user to change the quanity of a book or remove a book from the bag entirely.
+
+* Back to top arrow - mobile display has a handy arrow to allow user to quickly jump back to top of the page.
 
 ## Checkout Page
 
-![Add Review Page](docs/reviews2.JPG) <br>
+![Checkout Page](docs/checkout.JPG) <br>
     
 **Contains**:
-* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+* checkout form - user can enter in their shipping and contact details.
+
+* stripe card element - user can process their payment through a trustworthy company.
+
+* save delivery info checkbox - allows signed in user to save their delivery info to their profile, to speed up future purchases.
+
+* another order and price summary - for user clarity and peace of mind.
 
 ## Checkout Success / Order Summary Page
 
-![Add Review Page](docs/reviews2.JPG) <br>
+![Checkout Success](docs/order-confirmation.JPG) <br>
     
 **Contains**:
-* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+* Order summary - user can see all relevant info regarding their order. This page can also be revisted through the user's profile order history section (if the user has registered for an account). It also lets user know a confirmation should be in their email inbox.
 
 
 

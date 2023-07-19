@@ -11,7 +11,7 @@
                     </span>
                 </button>
             </div>
-            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} 
+            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} rounded
                 {% if item.option %}option_{{ item.item_id }}_{{ item.option }}{% endif %}" type="number"
                 name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
                 data-option="{{ item.option }}">
