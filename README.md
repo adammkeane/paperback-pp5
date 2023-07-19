@@ -8,7 +8,7 @@ PaperBack is an online book store that specialises in physical books. The target
 
 # Components / Features / Pages
 
-## Home Page
+## 1 - Home Page
 
 ![Home Page](docs/home.JPG) <br>
 
@@ -18,7 +18,7 @@ PaperBack is an online book store that specialises in physical books. The target
 
 - Latest additions - displays the 3 most recent additions to the shop.
 
-## Nav Bar
+## 2 - Nav Bar
 
 Repsonsively houses easy-to-reach, useful links for the user.
 
@@ -44,7 +44,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Banner - allows users to quickly navigate to home, books, and contact form pages.
 
-## Footer
+## 3 - Footer
 
 ![Footer](docs/footer.JPG) <br>
 
@@ -54,7 +54,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Mailchimp newsletter sign up form - user can enter email to be added a newsletter mailing list.
 
-## Books Page
+## 4 - Books Page
 
 ![Books Page](docs/books.JPG) <br>
 
@@ -64,7 +64,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Book info - basic book info is given, including the cover image, title, price and review info. Both the cover image and title act as links to take you to the book detail page.
 
-## Book Detail Page
+## 5 - Book Detail Page
 
 - Detail 1 <br>
   ![Book Detail 1](docs/book-detail1.JPG)
@@ -83,7 +83,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Reviews - user can see how other users have reviewed the book in more detail. They can also add a review of their own if they are signed in.
 
-## Add Review Page
+## 6 - Add Review Page
 
 ![Add Review Page](docs/reviews2.JPG) <br>
 
@@ -91,7 +91,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
 
-## Shopping Bag Page
+## 7 - Shopping Bag Page
 
 - Desktop <br>
   ![Shopping Bag Page Desktop](docs/bag1.JPG)
@@ -107,7 +107,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Back to top arrow - mobile display has a handy arrow to allow user to quickly jump back to top of the page.
 
-## Checkout Page
+## 8 - Checkout Page
 
 ![Checkout Page](docs/checkout.JPG) 
 
@@ -121,7 +121,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - another order and price summary - for user clarity and peace of mind.
 
-## Checkout Success / Order Summary Page
+## 9 - Checkout Success / Order Summary Page
 
 ![Checkout Success](docs/order-confirmation.JPG) <br>
 
@@ -129,7 +129,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Order summary - user can see all relevant info regarding their order. This page can also be revisted through the user's profile order history section (if the user has registered for an account). It also lets user know a confirmation should be in their email inbox.
 
-## Add Book Page (superuser)
+## 10 - Add Book Page (superuser)
 
 ![Add Book Page](docs/add-book.JPG) <br>
 
@@ -137,7 +137,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Add book form - contains inputs for name, description, if the book has options, price, image url, and image. Only name, description and price fields are mandatory. Once submitted, user is taken to book detail page where they can view the book they just added to the store.
 
-## Edit / Delete Book (superuser)
+## 11 - Edit / Delete Book (superuser)
 
 ![Edit / Delete Book Page](docs/edit-delete-books.JPG) <br>
 
@@ -148,7 +148,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 - Delete book button - visible in same places as edit button. Once pressed, book is deleted and user is taken to the books page, where deleted book will no longer be visible.
 
 
-## Contact Page
+## 12 - Contact Page
 
 ![Contact Page](docs/contact.JPG) <br>
 
@@ -156,7 +156,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 - Contact form - allows users to send a message to the site owner, if they have any feedback, questions, requests etc.
 
-## Author Page 
+## 13 - Author Page 
 Reached through link on the book detail page (author's name is the link).
 
 ![Author Page](docs/author.JPG) <br>
@@ -167,7 +167,7 @@ Reached through link on the book detail page (author's name is the link).
 
 - Books - a display of which books the author currently has in site's store.
 
-## Profile Page 
+## 14 - Profile Page 
 
 ![Profile Page](docs/profile.JPG) <br>
 
@@ -177,7 +177,7 @@ Reached through link on the book detail page (author's name is the link).
 
 - Order history - a display of previous orders made by the user. The order number is a link to the order confirmation page associated with that order.
 
-## Allauth Pages
+## 15 - Allauth / Account Management  Pages
 
 - Sign Up <br>
 ![Sign In](docs/sign-up.JPG) 
@@ -192,7 +192,7 @@ Reached through link on the book detail page (author's name is the link).
 
 - allauth authentication, registration and account management - gives user high quality experience when working with their account, including email verification and password resets.
 
-## Custom 404 Page 
+## 16 - Custom 404 Page 
 
 ![404 Page](docs/404.JPG) <br>
 
@@ -200,7 +200,7 @@ Reached through link on the book detail page (author's name is the link).
 
 - 404 - let's user know a 404 error has occured and provides them with a button link to get to the book store.
 
-## Favicon
+## 17 - Favicon
 
 ![favicon](docs/favicon.JPG) <br>
 
