@@ -177,37 +177,38 @@ Reached through link on the book detail page (author's name is the link).
 
 - Order history - a display of previous orders made by the user. The order number is a link to the order confirmation page associated with that order.
 
+## Allauth Pages
 
+- Sign Up <br>
+![Sign In](docs/sign-up.JPG) 
+
+- Sign In <br>
+![Sign In](docs/sign-in.JPG) 
+
+- Sign Out <br>
+![Sign In](docs/sign-out.JPG) 
+
+**Contains**:
+
+- allauth authentication, registration and account management - gives user high quality experience when working with their account, including email verification and password resets.
+
+## Custom 404 Page 
+
+![404 Page](docs/404.JPG) <br>
+
+**Contains**:
+
+- 404 - let's user know a 404 error has occured and provides them with a button link to get to the book store.
+
+## Favicon
+
+![favicon](docs/favicon.JPG) <br>
+
+**Contains**:
+
+- Favicon - makes it easier for user to find the tab to the site when they have multiple tabs open. It also adds a touch of professionalism to the site.
 
 ## end
-
-- Sign Up page
-
-  - Allows the user to register for an account so they can save their details and order history.
-    ![Sign Up](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/sign-up.PNG)
-
-- Sign In / Login page
-
-  - Allows the user to log in to an existing account in order to manage reviews and view their order history.
-    ![Sign In](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/login.PNG)
-
-- Sign out / Logout confirmation page
-
-  - A template that renders after the user chooses to log out, giving them a chance to confirm in case they clicked the link by mistake.
-
-    ![Sign Out](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/logout.PNG)
-
-- Custom 404 page
-
-  - A custom 404 page has been made to make it easy for the user to come back to home page after they tried to move to a non-existent page.
-
-    ![404](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/404.PNG)
-
-- A favicon
-
-  - A favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open.
-
-    ![Favicon](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/favicon.PNG)
 
 - A Facebook business page
 
@@ -231,211 +232,6 @@ The aim of the website is:
 - to give the site owners / authorised staff the possibility of viewing the orders and reviews users made so they can be modified or deleted if needed;
 - to give users the possibility of accessing the website on any device;
 - to give users the means necessary for them to be able to contact the shop owner.
-
-### User Stories
-
-User stories for this project can be viewed on [Trello](https://trello.com/b/S14lxcQ0/bookworms-paradise).
-
-![UX Epic](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/ux-epic.PNG)
-
-1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what it's purpose is.
-
-   - Acceptance Criteria:
-     - Bookshop's logo and information displayed on the main page with clear information on what the site's purpose is.
-   - Implementation:
-     - The Home page will contain the main website title of "Bookworm's Paradise", situated in the navbar section.
-     - It will also contain information about the site's general purpose and about the shop itself, to make what the site is intended for immediately clear to the user.
-
-2. As a user, I want to be able to easily navigate between the different parts / pages of the website so that I can find content quickly and easily on any device.
-
-   - Acceptance Criteria:
-     - Navigation menu to allow users to navigate the site with ease.
-     - Collapsible mobile menu to allow users to navigate the site from a mobile device.
-     - All navigation links should navigate to the correct pages.
-     - The 'Profile' dropdown option should only appear for signed in users.
-   - Implementation:
-     - A navigation menu will be created to allow users to navigate through the site. It will be collapsible on a mobile device, and positioned at the top left of the logo element.
-     - When a user is not logged in, the 'Account' dropdown will only show the 'Register' and 'Login' links.
-     - When a user is logged in the 'Account' dropdown will show 'Profile' and 'Logout' options.
-
-3. As a user, I want to be able to easily find links to any social media channels that the bookshop might be running.
-
-   - Acceptance Criteria:
-     - Social media links included to allow users to navigate to linked accounts with ease.
-     - All links should navigate to the correct pages.
-   - Implementation:
-     - Social media links in the form of FontAwesome icons will be added to the footer and appear on each page.
-
-4. As a user, I want to search for a book using its title, author or description, so I can find a specific book I'm interested in.
-
-   - Acceptance Criteria:
-     - A search bar that takes different criteria and keywords.
-   - Implementation:
-     - A search bar will be added to the navbar, allowing the users to search a book by its author, title, or keywords present in its synopsis.
-
-5. As a user, I want to see all results of my search so I can see straight away whether the book I'm looking for is available on the site.
-
-   - Acceptance Criteria:
-     - A page displaying search results.
-   - Implementation:
-     - A page displaying search results will be created, allowing the user to see every book that the search produced.
-
-6. As a user, I want to see all results of my search so I can see straight away whether the book I'm looking for is available on the site.
-
-   - Acceptance Criteria:
-     - A page displaying search results.
-   - Implementation:
-     - A page displaying search results will be created, allowing the user to see every book that the search produced.
-
-7. As a user, I want to be able to contact the shop in case I have any questions regarding the products or an order I made, or if I encounter any issues with the website.
-
-   - Acceptance Criteria:
-     - A 'Contact' page which includes a form allowing users to send the shop owner a message.
-   - Implementation:
-     - A 'Contact' page will be created and it will include a form through which a user can send a message to the shop owner. It will consist of an obligatory email field so the shop owner is able to reply to the query.
-
-8. As a user, I want to be able to sort the books by price, rating, author, etc., so that I can find the best option for myself.
-
-   - Acceptance Criteria:
-     - Sorting functionality to be added to the 'All Books' page, allowing users to sort the books by title, author, price, rating and genre.
-   - Implementation:
-     - A select input will be added to the aforementioned page, allowing users to modify the order in which the books appear.
-
-9. As a user, I want to be able to view all available books on one page so that I can see everything that the shop has on offer in one place.
-
-   - Acceptance Criteria:
-     - A page with all the books listed, so that users can see everything that is being offered so they don't have to settle on a genre.
-   - Implementation:
-     - The 'All Books' page will consist of a list of all books that are available in the shop so users will be able to see all of them in one place.
-
-10. As a user, I want to be able to view detailed information about the product (book), including photos.
-
-    - Acceptance Criteria:
-      - A book detail page for each book that will include all the information about the book, such as its title, author, publisher, the number of pages, the type of binding, etc.
-    - Implementation:
-      - A detail page will be created for each book, containing all the aforementioned information in a clear and concise manner.
-
-11. As a user, I want to see the reviews other people left, so that I can decide whether it's a good idea to purchase a book or not.
-
-    - Acceptance criteria:
-      - A section displaying existing reviews will be added to each book's detail page.
-    - Implementation:
-      - A section displaying existing reviews will be added to each book's detail page for everyone to see and read, even the users that did not log in.
-
-12. As a user, I want to add reviews to the books I've purchased and/or read, so I can share my opinion on the book or shopping experience.
-
-    - Acceptance criteria:
-      - A custom review form allowing logged in users to add a review to each book.
-    - Implementation:
-      - A review form will be added to the bottom of each book's detail page, allowing logged in users to leave a review of the book.
-
-13. As a user, I want to be able to edit reviews that I added, so that I can add missing information or edit the existing one.
-
-    - Acceptance criteria:
-      - An edit button will be added to each review.
-    - Implementation:
-      - An edit button will be added to each review but will only be visible to each review's logged in author, allowing them to modify it and save changes.
-
-14. As a user, I want to be able to delete reviews that I added, if I change my mind and do not want to share them anymore.
-    - Acceptance criteria:
-      - A delete button will be added to each review.
-    - Implementation:
-      - A delete button will be added to each review but will only be visible to each review's logged in author, allowing them to delete the review.
-
-![SE Epic](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/se-epic.PNG)
-
-15. As a user, I want to be able to easily view the total for the books in my cart (without navigating to it) so that I can avoid spending too much.
-
-    - Acceptance criteria:
-      - Cart icon displaying the cumulative price of selected books visible on each store page.
-    - Implementation:
-      - An amount field will be added under the cart icon and it will update every time an item is added to the cart, showing accurate amount to be paid on checkout
-
-16. As I user, I want to easily select the quantity of a chosen book when purchasing it, so I can avoid choosing the wrong amount or book.
-
-    - Acceptance Criteria:
-      - A quantity selection box to be included on each book's detail page.
-    - Implementation:
-      - A quantity selection box will be added to the book detail page for each book, where users will be able to input the quantity they would like to purchase.
-
-17. As a user, I want to view the contents of my cart, so that I can see which books I've chosen and identify the total cost of my order.
-
-    - Acceptance Criteria:
-      - A custom cart page, showing the chosen items, their quantity and cost.
-    - Implementation:
-      - A cart page will be created, showcasing the items that the user has chosen and their price, as well as the delivery costs and the grand total for the order.
-
-18. As I user, I want to easily change the quantity of a chosen book in the cart so that I can make changes to my order before checking out.
-
-    - Acceptance Criteria:
-      - A quantity selection box to be included next to the book already in the cart.
-      - Edit and delete functionality included.
-    - Implementation:
-      - A quantity selection box will be included next to the book already in the cart, with buttons allowing users to edit the quantity or delete the book from cart completely.
-
-19. As a user, I want to be able to enter my payment information easily, so that I can check out promptly and hassle-free.
-
-    - Acceptance criteria:
-      - Form allowing the user to enter their card details in a quick and efficient manner.
-    - Implementation:
-      - The checkout page will consist of a Stripe form input, allowing the user to enter their card details and pay for their order.
-
-20. As a user, I want to see an order confirmation after checking out, so I can see that all the details are correct.
-
-    - Acceptance criteria:
-      - A page informing the user that they checked out successfully and displaying their order information.
-    - Implementation:
-      - A page that is generated after an order has been placed will be added, displaying the order and delivery information to the user.
-
-21. As a user, I want to see my past orders so that I can keep records of my purchases.
-    - Acceptance criteria:
-      - A page displaying the user's past orders in the profile section.
-    - Implementation:
-      - An order history section will be created and added to the user's profile page.
-
-![UP Epic](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/up-epic.PNG)
-
-22. As a user, I want to be able to register for an account so I can view my profile.
-
-    - Acceptance Criteria:
-      - A custom registration form / page allowing the users to register for an account.
-    - Implementation:
-      - A reservation form / page will be created using the allauth library, allowing users to register for an account.
-
-23. As a user, I want to be able to log into my account to be able to access my account information and view my order history.
-
-    - Acceptance Criteria:
-      - A login form allowing the users to login to the website.
-    - Implementation:
-      - A login form will be created using the allauth library, allowing users to login to an existing account.
-
-24. As a user, I want to be able to reset my password if I forget it, so that I can access my account.
-
-    - Acceptance Criteria:
-      - A custom password reset form allowing the users to input their email so they can be sent a password reset link.
-    - Implementation:
-      - A login form will be created using the allauth library, allowing users to reset their password.
-
-25. As a user, I want to have my own profile so I can save and view my personal information and order details.
-    - Acceptance Criteria:
-      - A personalised profile page for each authorised user, allowing them to view and manage their info.
-    - Implementation:
-      - A profile page will be created, containing user's personal details, such as delivery address, and their order history.
-
-![AP Epic](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/ap-epic.PNG)
-
-26. As a site admin, I want to be able to add, edit and delete books from my shop.
-
-    - Acceptance Criteria:
-      - An 'Admin' page displaying all books currently in stock, where the shop's owner or authorised staff are able to view, modify and delete them.
-    - Implementation:
-      - A Django built-in admin panel will be utilised to create a page where staff authorised as Django 'superusers' can view books in stock, as well modify and them.
-
-27. As a site admin, I want to be able to view, edit and delete users' orders.
-    - Acceptance Criteria:
-      - An 'Admin' page displaying all orders placed by users, where the shop's owner or authorised staff are able to view, modify and delete them.
-    - Implementation:
-      - A Django built in admin panel will be utilised to create a page where staff authorised as Django 'superusers' can view the existing orders, as well as modify and delete them if necessary.
 
 ### Business model
 
