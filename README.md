@@ -49,42 +49,68 @@ Repsonsively houses easy-to-reach, useful links for the user.
 * Social media links - Facebook links to a facebook page created for the ecommerce site. Youtube just links to youtube homepage for now. Both links contain the noopener and nofollow rel attributes.
 
 * Mailchimp newsletter sign up form - user can enter email to be added a newsletter mailing list.
-        
 
+## Books Page
 
-## Welcome to Bookworm Paradise section
-    * A small section welcoming users to the store. 
-
-      ![Welcome](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/welcome.PNG)
-
-* Newsletter section
-    * A section containing the newsletter subscription form, where users can enter their email which will then be saved in MailChimp database. In a real life scenarion, this could then be used to create a mailing list to send out newsletters.  
-
-      ![Newsletter](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/newsletter.PNG)
-
-* Interactive footer across all pages
-    * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Bookworm Paradise page.
-
-      ![Footer](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/footer.PNG)
-
-* All Books page
-    * This page list all books available to purchase on the site, with clickable book ocvers that lead to the chosen book's detail page when clicked. It states how many books are available in the shop in total and has a 'Sort by...' select box where users can sort books by title, author, genre, price and rating.  
-
-      ![All Books](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/all-books.PNG) 
-
-    * The books on this page can also be sorted into Genres by clicking on the Genres link in the navbar. Once a genre is chosen, the page will display only the books in the chosen genre and update their number. 
-
-* Book detail page
-    * Once a user selects a book and clicks on its cover, they will be taken to the book's detail page containing all the information about it, such as price, description, number of pages, etc. If a user is an admin / shop owner, they will also be able to edit or delete a book on this page, using the 'Edit' and 'Delete' buttons located above the price. 
+![Books Page](docs/books.JPG) <br>
     
-      ![Book details](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/book-detail.PNG) 
+**Contains**:
+* Book count & sorting - tells user the total number of books on display, and allows user to sort the books in terms of name, price and average review rating (both ascending and descending)
 
-* Book detail page - review section
-    * At the bottom of each book's detail page, users can find a section where they can read existing reviews or add their own. All users can view existing reviews but only logged in users can add them. When it comes to editing or deleting an existing review, only the review's author can do this. A user will see the an 'Edit' and 'Delete' buttons under a review only if they are the review's author.
+* Book info - basic book info is given, including the cover image, title, price and review info. Both the cover image and title act as links to take you to the book detail page.
+
+## Book Detail Page
+
+- Book Detail 1
+![Book Detail 1](docs/book-detail1.JPG) <br>
+
+- Book Detail 2
+![Book Detail 2](docs/book-detail2.JPG) <br>
+
+- Book Detail 3 (reviews)
+![Book Detail 3 (reviews)](docs/reviews1.JPG) <br>
     
-      ![Reviews](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/reviews.JPG) 
+**Contains**:
+* Book detail - includes cover image, title, author, review score/number of reviews in parenthesis and price. The author is a link the author page.
 
-* Contact page
+* Add to bag - user can select the option (if there is one), select the quantity they want, and add their deserved option combo quantity to shopping bag.
+
+* Reviews - user can see how other users have reviewed the book in more detail. They can also add a review of their own if they are signed in.
+
+## Add Review Page
+
+![Add Review Page](docs/reviews2.JPG) <br>
+    
+**Contains**:
+* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+
+## Shopping Bag Page
+
+![Add Review Page](docs/reviews2.JPG) <br>
+    
+**Contains**:
+* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+
+## Checkout Page
+
+![Add Review Page](docs/reviews2.JPG) <br>
+    
+**Contains**:
+* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+
+## Checkout Success / Order Summary Page
+
+![Add Review Page](docs/reviews2.JPG) <br>
+    
+**Contains**:
+* Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
+
+
+
+
+
+
+## Contact page
     * The contact.html page consists of a contact form through which a user can ask the shop owner a question. When submitted, the form creates a message instance in the database so the owner can access it and contact the user. 
     
       ![Contact](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/contact-form.PNG)
