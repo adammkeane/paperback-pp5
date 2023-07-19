@@ -11,17 +11,17 @@ PaperBack is an online book store that specialises in physical books. The target
 ## Nav Bar 
 Repsonsively houses easy-to-reach, useful links for the user.
 
-Nav Bar Desktop
+Nav Bar Desktop <br>
 ![Nav Bar Desktop](docs/navbar.JPG)
 
-Nav Bar Mobile (closed)
+Nav Bar Mobile (closed) <br>
 ![Nav Bar Mobile (closed)](docs/navbar2.JPG)
 
-Nav Bar Mobile (open)
+Nav Bar Mobile (open) <br>
 ![Nav Bar Mobile (open)](docs/navbar3.JPG)
 
 
-Nav Bar Mobile (open & account dropdown)
+Nav Bar Mobile (open & account dropdown) <br>
 ![Nav Bar Mobile (open & account dropdown)](docs/navbar4.JPG)
 
 Contains:
@@ -35,7 +35,7 @@ Contains:
 
 ## Footer 
 
-![Footer](docs/footer.JPG)
+![Footer](docs/footer.JPG) <br>
     
 Contains:
 * Social media links - Facebook links to a facebook page created for the ecommerce site. Youtube just links to youtube homepage for now. Both links contain the noopener and nofollow rel attributes.
@@ -44,7 +44,7 @@ Contains:
         
 ## Home Page 
 
-![Home Page](docs/home.JPG)
+![Home Page](docs/home.JPG) <br>
     
 Contains:
 * Intro section - welcomes user to the site, tells them what the site does, and links to our selection of books.
