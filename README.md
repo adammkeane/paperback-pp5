@@ -314,25 +314,7 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 
 ### Entity Relationship Diagram
 
-![ERD](docs/er-diagram.PNG)
-
-### Wireframes
-
-- Home
-
-  ![WireframeHome](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wireframe1.PNG)
-
-- All Books
-
-  ![WireframeBooks](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wireframe2.PNG)
-
-- Book details
-
-  ![WireframeDetails](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wireframe3.PNG)
-
-- Contact Us
-
-  ![WireframeContact](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wireframe4.PNG)
+![ERD](docs/er-diagram.png)
 
 ## Technologies
 
@@ -350,11 +332,10 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 - [Heroku](https://dashboard.heroku.com/apps) was used to deploy the game to the web.
 - [Git](https://git-scm.com/) was used to track changes made to the project and to commit and push code to the repository.
 - [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) was used to test the website's accessibility.
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to run an audit of the website.
 
-## Testing
+# Testing
 
-### Manual testing
+## 1 - Manual Testing
 
 | Test Case # | Description                                            | Steps                                                                                                                                                                                                                                                                                                                                                                        | Expected                                                                                                                                                                                                                                                                                                  | Actual                                                                                    | Pass/Fail |
 | ----------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | --------- |
@@ -373,13 +354,13 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 
 |
 
-### Automated testing
+## 2 - Automated Testing
 
 All tests in tests.py files were run successfuly.
 
 ![AutoTest](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/auto-testing.PNG)
 
-### Validator testing
+## 3 - Validator Testing
 
 - HTML - when the code was passed through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbookworm-paradise.herokuapp.com%2F)
 
@@ -404,6 +385,8 @@ All tests in tests.py files were run successfuly.
   - Aria-labels were missing on some content - I have added all of them.
   - No further errors have been found after I applied the above fixes and passed the site through the validator again.
   ![Wave](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wave.PNG)
+
+## 4 - Repsonsiveness Testing
 
 ### Unfixed bugs
 
