@@ -10,7 +10,7 @@ PaperBack is an online book store that specialises in physical books. The target
 
 ## 1 - Home Page
 
-USER STORY: Home Page
+``USER STORY: Home Page``
 
 ![Home Page](docs/home.JPG) <br>
 
@@ -22,7 +22,7 @@ USER STORY: Home Page
 
 ## 2 - Nav Bar
 
-USER STORY: Nav Bar/Bootstrap Install
+``USER STORY: Nav Bar/Bootstrap Install``
 
 Repsonsively houses easy-to-reach, useful links for the user.
 
@@ -50,7 +50,7 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 3 - Footer
 
-USER STORY: Footer / Mailchimp Newsletter
+``USER STORY: Footer / Mailchimp Newsletter``
 
 ![Footer](docs/footer.JPG) <br>
 
@@ -62,7 +62,7 @@ USER STORY: Footer / Mailchimp Newsletter
 
 ## 4 - Books Page
 
-USER STORY: View Books
+``USER STORY: View Books``
 
 ![Books Page](docs/books.JPG) <br>
 
@@ -74,8 +74,8 @@ USER STORY: View Books
 
 ## 5 - Book Detail Page
 
-USER STORY: View Books
-USER STORY: View Book Reviews
+``USER STORY: View Books``
+``USER STORY: View Book Reviews``
 
 - Detail 1 <br>
   ![Book Detail 1](docs/book-detail1.JPG)
@@ -96,7 +96,7 @@ USER STORY: View Book Reviews
 
 ## 6 - Add Review Page
 
-USER STORY: Create Book Reviews
+``USER STORY: Create Book Reviews``
 
 ![Add Review Page](docs/reviews2.JPG) <br>
 
@@ -106,7 +106,7 @@ USER STORY: Create Book Reviews
 
 ## 7 - Shopping Bag Page
 
-USER STORY: Shopping Bag
+``USER STORY: Shopping Bag``
 
 - Desktop <br>
   ![Shopping Bag Page Desktop](docs/bag1.JPG)
@@ -124,7 +124,7 @@ USER STORY: Shopping Bag
 
 ## 8 - Checkout Page
 
-USER STORY: Checkout Page / Stripe 
+``USER STORY: Checkout Page / Stripe``
 
 ![Checkout Page](docs/checkout.JPG) 
 
@@ -140,7 +140,7 @@ USER STORY: Checkout Page / Stripe
 
 ## 9 - Checkout Success / Order Summary Page
 
-USER STORY: Checkout Page / Stripe 
+``USER STORY: Checkout Page / Stripe``
 
 ![Checkout Success](docs/order-confirmation.JPG) <br>
 
@@ -150,7 +150,7 @@ USER STORY: Checkout Page / Stripe
 
 ## 10 - Add Book Page (superuser)
 
-USER STORY: Add Book
+``USER STORY: Add Book``
 
 ![Add Book Page](docs/add-book.JPG) <br>
 
@@ -160,8 +160,8 @@ USER STORY: Add Book
 
 ## 11 - Edit / Delete Book (superuser)
 
-USER STORY: Edit Books
-USER STORY: Delete Books
+``USER STORY: Edit Books``
+``USER STORY: Delete Books``
 
 ![Edit / Delete Book Page](docs/edit-delete-books.JPG) <br>
 
@@ -174,7 +174,7 @@ USER STORY: Delete Books
 
 ## 12 - Contact Page
 
-USER STORY: Contact Form
+``USER STORY: Contact Form``
 
 ![Contact Page](docs/contact.JPG) <br>
 
@@ -184,7 +184,7 @@ USER STORY: Contact Form
 
 ## 13 - Author Page 
 
-USER STORY: View Author
+``USER STORY: View Author``
 
 Reached through link on the book detail page (author's name is the link).
 
@@ -198,7 +198,7 @@ Reached through link on the book detail page (author's name is the link).
 
 ## 14 - Profile Page 
 
-USER STORY: Profile App
+``USER STORY: Profile App``
 
 ![Profile Page](docs/profile.JPG) <br>
 
@@ -210,7 +210,7 @@ USER STORY: Profile App
 
 ## 15 - Allauth / Account Management  Pages
 
-USER STORY: Allauth/User Autorization Management
+``USER STORY: Allauth/User Autorization Management``
 
 - Sign Up <br>
 ![Sign In](docs/sign-up.JPG) 
@@ -227,7 +227,7 @@ USER STORY: Allauth/User Autorization Management
 
 ## 16 - Custom 404 Page 
 
-USER STORY: Custom 404 Page
+``USER STORY: Custom 404 Page``
 
 ![404 Page](docs/404.JPG) <br>
 
@@ -243,7 +243,41 @@ USER STORY: Custom 404 Page
 
 - Favicon - makes it easier for user to find the tab to the site when they have multiple tabs open. It also adds a touch of professionalism to the site.
 
-## end
+# Planning / Agile
+
+## 1 - Project Board & User Stories
+
+[Click here to view GitHub project board.](https://github.com/users/adammkeane/projects/7)
+
+- Project Board <br>
+![Project Board](docs/agile1.JPG)
+
+- User Story Example <br>
+![User Story Example](docs/agile2.JPG)
+
+The project was broken down in Epics, User stories and Tasks, as can be seen from the prooject board.
+
+## 2 - Wireframes
+
+Rough wireframes were created to find the basic layout for key pages before coding. During coding, the nav bar was made cleaner on mobile by hiding more elements inside the hamburger dropdown, improving the orignal wireframe layout.
+
+- Home Desktop <br>
+![Home Desktop](docs/home-wire1.JPG)
+
+- Home Mobile <br>
+![Home Mobile](docs/home-wire2.JPG)
+
+- Nav & Footer Desktop <br>
+![Nav & Footer Desktop](docs/nav-footer-wire1.JPG)
+
+- Nav & Footer Mobile <br>
+![Nav & Footer Mobile](docs/nav-footer-wire2.JPG)
+
+- Books Desktop <br>
+![Books Desktop](docs/books-wire1.JPG)
+
+- Home Mobile <br>
+![Books Mobile](docs/books-wire2.JPG)
 
 - A Facebook business page
 
