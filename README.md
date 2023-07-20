@@ -311,6 +311,13 @@ Keywords I came up with for PaperPark ( mixture of long and short tail):
 
 The keywords are highly competetive, so SEO may not be the best way for this business to stand out.
 
+As for as content ideas, I thought users would want:
+- To see what books are available and have access to some key information, eg the price, book image, review score, title.
+- A good layout and aesthics to show this info. Don't want to overwhelm user with info.
+- Each book should have a link to a book detail page to get more info if the user is interested.
+- A payment system should be trustworthy. Ideally link in with a well know brand like PayPal or Stripe.
+- The ability to save delivery info so it doesn't have to be entered for every purchase.
+
 
 ### Entity Relationship Diagram
 
@@ -351,8 +358,9 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 | 10          | Delete book button                                     | 1\. Sign in as super user and add 3 books <br>2\. Go to books page and press delete button under 1 of those books. <br>3\. Go to book detail page and press delete button under 1 of those books. <br>4\. Go to author page and press delete button under last of those books.                                                                                               | 1. With each delete press, user is taken to the books page and shown a success message.<br>2\. Deleted book can no longer be found on the books page.                                                                                                                                                     | As expected                                                                               | Pass      |
 | 11          | Update bag item validation (bag page)                  | 1\. Add item to shopping bag and go to bag page. <br>2\. Incorrectly fill in quantity field (less than 1, or greater than 99), changing it from its original value, and try to submit the form. <br>3\. Correctly fill in quantity and submit.                                                                                                                               | 1. Form doesn't allow submission.<br>2\. Feedback is given to user to let them know what they need to change.<br>3\. When form is filled in correctly, the form successfully submits, user is shown a success message and the bag quantity matches their form input.                                      | As expected                                                                               | Pass      |
 | 12          | Delete bag item button (bag page)                      | 1\. Add item to shopping bag and go to bag page. <br>2\. Press the delete button under the item.                                                                                                                                                                                                                                                                             | 1\. Bag page reloads, user is shown a success message, and bag is updated to reflect the removed item.                                                                                                                                                                                                    | As expected                                                                               | Pass      |
+| 13          | Books page sorting                      | 1\. CLick the sorting dropdown menu and select each option                                                                                                                                                                                                                                                                             | 1\. Each option sorts the books as expected                                                                                                                                                                                        | 1\. When sorting by rating, if a book did not have any reviews, that book would appear higher rated than books that did have reviews. 2\. Would have liked for that to be the other way around. All other rating options worked as exptected                                                                             | Fail      |
 
-|
+
 
 ## 2 - Automated Testing
 
@@ -377,6 +385,8 @@ All tests were run successfuly.
 - Accessibility - Website was made with the help of the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility. 
 
 ## 4 - Repsonsiveness Testing
+
+All pages were tested to ensure responsiveness on screen sizes from 320px x 634px and upwards on both Firefox and Chrome. Good user experience found on all screen sizes.
 
 # Unfixed bugs
 
