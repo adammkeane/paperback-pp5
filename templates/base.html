@@ -60,10 +60,11 @@
         <div class="col-12 col-lg-4 my-auto py-3 py-lg-0 d-none d-lg-block">
             <form method="GET" action="{% url 'books' %}">
                 <div class="input-group w-100">
-                    <input class="form-control rounded border-dark" type="text" name="q"
+                    <label for="search-bar2" class="visually-hidden">Search here</label>
+                    <input id="search-bar2" class="form-control rounded border-dark" type="text" name="q"
                         placeholder="Search our books :)">
                     <div class="input-group-append">
-                        <button class="form-control btn rounded" type="submit">
+                        <button class="form-control btn rounded" type="submit" aria-label="search">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -113,10 +114,11 @@
                 <li class="nav-item my-auto col-12 col-lg-4 my-auto py-3 py-lg-0 d-lg-none">
                     <form method="GET" action="{% url 'books' %}">
                         <div class="input-group w-100">
-                            <input class="form-control rounded border-dark" type="text" name="q"
+                            <label for="search-bar" class="visually-hidden">Search here</label>
+                            <input id="search-bar" class="form-control rounded border-dark" type="text" name="q"
                                 placeholder="Search our books :)">
                             <div class="input-group-append">
-                                <button class="form-control btn rounded" type="submit">
+                                <button class="form-control btn rounded" type="submit" aria-label="search">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -204,7 +206,8 @@
                                     /* real people should not fill this in and expect good things - do not remove this
                                     or risk form bot
                                     signups */
-                                    <input type="text" name="b_7bcc80243588b21ff84b9a72a_360a06f37f" tabindex="-1"
+                                    <label for="risk" class="visually-hidden">Do not use. To avoid bot signups</label>
+                                    <input id="risk" type="text" name="b_7bcc80243588b21ff84b9a72a_360a06f37f" tabindex="-1"
                                         value="">
                                 </div>
                                 <div class="optionalParent">
