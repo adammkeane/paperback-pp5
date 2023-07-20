@@ -288,25 +288,37 @@ Rough wireframes were created to find the basic layout for key pages before codi
 
     ![Facebook 2](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/fb2.JPG)
 
-## User Experience Design
 
-Bookworm Paradise is a responsive website of a non-existent online bookshop.
+# Marketing / SEO
 
-The aim of the website is:
+## 1 - Facebook Page
 
-- to give users an opportunity to purchase a book without an unnecessary hassle and going through complicated processes;
-- to give users the possibility of browsing the available books by genres so that they can easily find what they are interested in;
-- to give users the possibility of registering for an account in order to be able to save their delivery details and order history;
-- to give users the possibility of registering for an account in order to be able to leave a book review (and edit or delete it if necessary);
-- to give the site owners / authorised staff the possibility of viewing the orders and reviews users made so they can be modified or deleted if needed;
-- to give users the possibility of accessing the website on any device;
-- to give users the means necessary for them to be able to contact the shop owner.
+![Facebook Page 1](docs/fb1.JPG) <br>
+![Facebook Page 2](docs/fb2.JPG) <br>
 
-### Business model
+## 2 - Business Model / Marketing Strategy
 
-- Bookworm Paradise is based on a B2C (Business to Consumer) as it sells its books directly to the customer.
-- As this is the case, it needs to maintain good relationship with its customers in order to build a customer base and thrive.
-- A Facebook page has been created as it allows the shop owners to reach a wide range of customers and communicate with them regularly.
+PaperBack is a B2C (Business to Consumer), which sells physcial products through single online payments.
+
+Being a physical book retailer, we are a little restricted in terms of our marketing and appeal. Amazon sells the same books (as well as digital versions) and very effienctly. However, there does seem to be negative sentiment around Amazon's working conditions and monopoly-esque appereance. Whether these views are well founded or not, it does create a opportunity to market our business as one that cares for its employees and whos very existence is good for some competition in the online book selling business. 
+
+Keywords I came up with for PaperPark ( mixture of long and short tail):
+
+- books
+- buy books online
+- buy books
+- buy paperback books
+- buy paperback books online
+- buy hardback books
+- book store online 
+- online books store
+- physical books
+- physical books online
+- buy physical books
+- novel
+- paperback books
+- hardback books
+
 
 ### Entity Relationship Diagram
 
