@@ -314,7 +314,7 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 
 ### Entity Relationship Diagram
 
-![ERD](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/erd.PNG)
+![ERD](docs/er-diagram.PNG)
 
 ### Wireframes
 
