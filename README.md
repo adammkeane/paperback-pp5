@@ -356,23 +356,21 @@ The keywords are highly competetive, so SEO may not be the best way for this bus
 
 ## 2 - Automated Testing
 
-All tests in tests.py files were run successfuly.
+All tests were run successfuly.
 
-![AutoTest](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/auto-testing.PNG)
+- All tests result <br>
+![AutoTest](docs/test1.JPG)
+
+- Example from the books/tests.py <br>
+![AutoTest](docs/test2.JPG)
 
 ## 3 - Validator Testing
 
-- HTML - when the code was passed through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbookworm-paradise.herokuapp.com%2F)
+- HTML - All pages put through [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbookworm-paradise.herokuapp.com%2F) with no errors <br> 
+![html valid](docs/html-valid.JPG)
 
-  - When I passed my code through the W3C validator, two errors appeared. One of them stated that there was a stray 'label' tag somewhere in the code, and the other stated that there's a missing closing 'div' tag. I have located both of these in the main-nav.html file and corrected them.
-
-  - After correcting the above, I run the validator again and this time no errors were found:
-
-  ![W3C result](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/w3c-validator.PNG)
-
-- CSS - no errors were found when code was passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
-
-  ![CSS](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/css-validator.PNG)
+- CSS - All css put through [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator) with no errors <br>
+![css valid](docs/css-valid.JPG)
 
 - JavaScript - when running the code through [JSHint linter](https://jshint.com/) I received the following error message referring to the two 'html' variables: "'template literal syntax' is only available in ES6 (use 'esversion: 6').". I copied /_jshint esversion: 6 _/ into the linter window to override this. After I did this, no more errors appeared.
 
