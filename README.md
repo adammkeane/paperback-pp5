@@ -290,7 +290,7 @@ Rough wireframes were created to find the basic layout for key pages before codi
 
 PaperBack is a B2C (Business to Consumer), which sells physcial products through single online payments.
 
-Being a physical book retailer, we are a little restricted in terms of our marketing and appeal. Amazon sells the same books (as well as digital versions) and very effienctly. However, there does seem to be negative sentiment around Amazon's working conditions and monopoly-esque appereance. Whether these views are well founded or not, it does create a opportunity to market our business as one that cares for its employees and whose very existence and success is useful for increased competition in the online book selling market. 
+Being a physical book retailer, we are a little restricted in terms of our marketing and appeal. Amazon sells the same books (as well as digital versions) and very effienctly. However, there does seem to be negative sentiment around Amazon's working conditions and monopoly-esque appereance. Whether these views are well founded or not, it does create a opportunity to market our business as one that cares for its employees and whose very existence and success is useful for increased competition in the online book selling market. We could ask social media influencers to get behind this message and promote our store.
 
 Keywords I came up with for PaperPark (mixture of long and short tail):
 
