@@ -372,25 +372,18 @@ All tests were run successfuly.
 - CSS - All css put through [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator) with no errors <br>
 ![css valid](docs/css-valid.JPG)
 
-- JavaScript - when running the code through [JSHint linter](https://jshint.com/) I received the following error message referring to the two 'html' variables: "'template literal syntax' is only available in ES6 (use 'esversion: 6').". I copied /_jshint esversion: 6 _/ into the linter window to override this. After I did this, no more errors appeared.
+- Python - All python has been written to adhere to the PEP8 guidelines. Some minor problems still exist in the settings.py file.
 
-  ![jShint](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/jshint.PNG)
-
-- Python - when running the code through [PEP8 linter](http://pep8online.com/) I received a few 'line too long' errors referring to the automatically generated code in settings.py. As the code was auto-generated and there was not an easy fix to shorten the lines, I have left this error in. There were no errors in any files that have been coded and customised by me.
-
-- Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I have encountered the following errors and/or warnings:
-  - There were missing labels on some form inputs as the inputs had placeholders instead. I have added the labels and used the .visually-hidden class to hide them (I found info [here](https://www.a11yproject.com/posts/how-to-hide-content/#:~:text=visually%2Dhidden%20class%20is%20applied,focus%20indicator%20had%20gone%20to.))
-  - Aria-labels were missing on some content - I have added all of them.
-  - No further errors have been found after I applied the above fixes and passed the site through the validator again.
-  ![Wave](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/wave.PNG)
+- Accessibility - Website was made with the help of the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility. 
 
 ## 4 - Repsonsiveness Testing
 
-### Unfixed bugs
+# Unfixed bugs
 
-No other bugs found.
+- The save delivery info bug found in manual testing.
+- The review sorting bug found in manual testing.
 
-## Deployment
+# Deployment
 
 The below steps were followed to deploy this project to Heroku:
 
@@ -402,9 +395,9 @@ The below steps were followed to deploy this project to Heroku:
 6. Scroll down to Manual Deploy, make sure the 'main' branch is selected and click 'Deploy Branch'.
 7. The deployed app can be found [here](https://paperback-pp5-4d817902330a.herokuapp.com/).
 
-## Credits
+# Credits
 
-### Content & Media
+## 1 - Content & Media
 
 The information about each book and author, and images related to the books, have been taken from:
 
@@ -412,6 +405,7 @@ The information about each book and author, and images related to the books, hav
 - [Britannica](https://www.britannica.com//)
 - [Wikipedia](https://www.wikipedia.org/)
 
-### Acknowledgements
+## 2 - Acknowledgements
 
-I'd like to thank my mentor Daisy McGirr for her guidance and great advice throughout this project.
+Daisy McGirr(mentor) - for her guidance and great advice throughout this project. 
+[Olga's Project](https://github.com/OlgaJ1989/bookworm-paradise) - For readme inspiration and help with the contact app code.
