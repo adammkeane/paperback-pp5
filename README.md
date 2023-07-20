@@ -10,6 +10,8 @@ PaperBack is an online book store that specialises in physical books. The target
 
 ## 1 - Home Page
 
+USER STORY: Home Page
+
 ![Home Page](docs/home.JPG) <br>
 
 **Contains**:
@@ -19,6 +21,8 @@ PaperBack is an online book store that specialises in physical books. The target
 - Latest additions - displays the 3 most recent additions to the shop.
 
 ## 2 - Nav Bar
+
+USER STORY: Nav Bar/Bootstrap Install
 
 Repsonsively houses easy-to-reach, useful links for the user.
 
@@ -46,6 +50,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 3 - Footer
 
+USER STORY: Footer / Mailchimp Newsletter
+
 ![Footer](docs/footer.JPG) <br>
 
 **Contains**:
@@ -56,6 +62,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 4 - Books Page
 
+USER STORY: View Books
+
 ![Books Page](docs/books.JPG) <br>
 
 **Contains**:
@@ -65,6 +73,9 @@ Repsonsively houses easy-to-reach, useful links for the user.
 - Book info - basic book info is given, including the cover image, title, price and review info. Both the cover image and title act as links to take you to the book detail page.
 
 ## 5 - Book Detail Page
+
+USER STORY: View Books
+USER STORY: View Book Reviews
 
 - Detail 1 <br>
   ![Book Detail 1](docs/book-detail1.JPG)
@@ -85,6 +96,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 6 - Add Review Page
 
+USER STORY: Create Book Reviews
+
 ![Add Review Page](docs/reviews2.JPG) <br>
 
 **Contains**:
@@ -92,6 +105,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 - Add review form - only required field is the rating field, if user is short on words/time. Once submitted, user is taken back to book detail page, where they can see their review added to the review section.
 
 ## 7 - Shopping Bag Page
+
+USER STORY: Shopping Bag
 
 - Desktop <br>
   ![Shopping Bag Page Desktop](docs/bag1.JPG)
@@ -109,6 +124,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 8 - Checkout Page
 
+USER STORY: Checkout Page / Stripe 
+
 ![Checkout Page](docs/checkout.JPG) 
 
 **Contains**:
@@ -123,6 +140,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 9 - Checkout Success / Order Summary Page
 
+USER STORY: Checkout Page / Stripe 
+
 ![Checkout Success](docs/order-confirmation.JPG) <br>
 
 **Contains**:
@@ -131,6 +150,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 10 - Add Book Page (superuser)
 
+USER STORY: Add Book
+
 ![Add Book Page](docs/add-book.JPG) <br>
 
 **Contains**:
@@ -138,6 +159,9 @@ Repsonsively houses easy-to-reach, useful links for the user.
 - Add book form - contains inputs for name, description, if the book has options, price, image url, and image. Only name, description and price fields are mandatory. Once submitted, user is taken to book detail page where they can view the book they just added to the store.
 
 ## 11 - Edit / Delete Book (superuser)
+
+USER STORY: Edit Books
+USER STORY: Delete Books
 
 ![Edit / Delete Book Page](docs/edit-delete-books.JPG) <br>
 
@@ -150,6 +174,8 @@ Repsonsively houses easy-to-reach, useful links for the user.
 
 ## 12 - Contact Page
 
+USER STORY: Contact Form
+
 ![Contact Page](docs/contact.JPG) <br>
 
 **Contains**:
@@ -157,6 +183,9 @@ Repsonsively houses easy-to-reach, useful links for the user.
 - Contact form - allows users to send a message to the site owner, if they have any feedback, questions, requests etc.
 
 ## 13 - Author Page 
+
+USER STORY: View Author
+
 Reached through link on the book detail page (author's name is the link).
 
 ![Author Page](docs/author.JPG) <br>
@@ -169,6 +198,8 @@ Reached through link on the book detail page (author's name is the link).
 
 ## 14 - Profile Page 
 
+USER STORY: Profile App
+
 ![Profile Page](docs/profile.JPG) <br>
 
 **Contains**:
@@ -178,6 +209,8 @@ Reached through link on the book detail page (author's name is the link).
 - Order history - a display of previous orders made by the user. The order number is a link to the order confirmation page associated with that order.
 
 ## 15 - Allauth / Account Management  Pages
+
+USER STORY: Allauth/User Autorization Management
 
 - Sign Up <br>
 ![Sign In](docs/sign-up.JPG) 
@@ -193,6 +226,8 @@ Reached through link on the book detail page (author's name is the link).
 - allauth authentication, registration and account management - gives user high quality experience when working with their account, including email verification and password resets.
 
 ## 16 - Custom 404 Page 
+
+USER STORY: Custom 404 Page
 
 ![404 Page](docs/404.JPG) <br>
 
