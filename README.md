@@ -1,6 +1,6 @@
 # PaperBack - "We're bring paper back."
 
-PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. The aim of the site is to provide users with an easy and intuitive way to browse and buy books. Additional features, such a contact forms and profiles can help make this experience more enjoyable.
+PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. The aim of the site is to provide users with an easy and intuitive way to browse and buy books. Additional features, such a contact forms and profiles, can help make this experience more enjoyable.
 
 [Click here to view website.](https://paperback-pp5-4d817902330a.herokuapp.com/)
 
@@ -290,9 +290,9 @@ Rough wireframes were created to find the basic layout for key pages before codi
 
 PaperBack is a B2C (Business to Consumer), which sells physcial products through single online payments.
 
-Being a physical book retailer, we are a little restricted in terms of our marketing and appeal. Amazon sells the same books (as well as digital versions) and very effienctly. However, there does seem to be negative sentiment around Amazon's working conditions and monopoly-esque appereance. Whether these views are well founded or not, it does create a opportunity to market our business as one that cares for its employees and whos very existence is good for some competition in the online book selling business. 
+Being a physical book retailer, we are a little restricted in terms of our marketing and appeal. Amazon sells the same books (as well as digital versions) and very effienctly. However, there does seem to be negative sentiment around Amazon's working conditions and monopoly-esque appereance. Whether these views are well founded or not, it does create a opportunity to market our business as one that cares for its employees and whose very existence and success is useful for increased competition in the online book selling market. 
 
-Keywords I came up with for PaperPark ( mixture of long and short tail):
+Keywords I came up with for PaperPark (mixture of long and short tail):
 
 - books
 - buy books online
@@ -358,7 +358,7 @@ As for as content ideas, I thought users would want:
 | 10          | Delete book button                                     | 1\. Sign in as super user and add 3 books <br>2\. Go to books page and press delete button under 1 of those books. <br>3\. Go to book detail page and press delete button under 1 of those books. <br>4\. Go to author page and press delete button under last of those books.                                                                                               | 1. With each delete press, user is taken to the books page and shown a success message.<br>2\. Deleted book can no longer be found on the books page.                                                                                                                                                     | As expected                                                                               | Pass      |
 | 11          | Update bag item validation (bag page)                  | 1\. Add item to shopping bag and go to bag page. <br>2\. Incorrectly fill in quantity field (less than 1, or greater than 99), changing it from its original value, and try to submit the form. <br>3\. Correctly fill in quantity and submit.                                                                                                                               | 1. Form doesn't allow submission.<br>2\. Feedback is given to user to let them know what they need to change.<br>3\. When form is filled in correctly, the form successfully submits, user is shown a success message and the bag quantity matches their form input.                                      | As expected                                                                               | Pass      |
 | 12          | Delete bag item button (bag page)                      | 1\. Add item to shopping bag and go to bag page. <br>2\. Press the delete button under the item.                                                                                                                                                                                                                                                                             | 1\. Bag page reloads, user is shown a success message, and bag is updated to reflect the removed item.                                                                                                                                                                                                    | As expected                                                                               | Pass      |
-| 13          | Books page sorting                      | 1\. CLick the sorting dropdown menu and select each option                                                                                                                                                                                                                                                                             | 1\. Each option sorts the books as expected                                                                                                                                                                                        | 1\. When sorting by rating, if a book did not have any reviews, that book would appear higher rated than books that did have reviews. 2\. Would have liked for that to be the other way around. All other rating options worked as exptected                                                                             | Fail      |
+| 13          | Books page sorting                      | 1\. Click the sorting dropdown menu and select each option.                                                                                                                                                                                                                                                                             | 1\. Each option sorts the books as expected                                                                                                                                                                                        | 1\. When sorting by rating, if a book did not have any reviews, that book would appear higher rated than books that did have reviews. 2\. Would have liked for that to be the other way around. All other sorting options worked as exptected                                                                             | Fail      |
 
 
 
@@ -382,7 +382,7 @@ All tests were run successfuly.
 
 - Python - All python has been written to adhere to the PEP8 guidelines. Some minor problems still exist in the settings.py file.
 
-- Accessibility - Website was made with the help of the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility. 
+- Accessibility - Website was made with the help of the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility. Some label issues for inputs on the checkout and profiles page could not fixed as I couldn't figure out how to access the individual fields and was short on time. An alt tag was also missing from the current image field of the the edit book page, but couldn't fix for the same reasons as above.
 
 ## 4 - Repsonsiveness Testing
 
@@ -417,5 +417,5 @@ The information about each book and author, and images related to the books, hav
 
 ## 2 - Acknowledgements
 
-Daisy McGirr(mentor) - for her guidance and great advice throughout this project. 
+Daisy McGirr(mentor) - for her guidance and great advice throughout this project.<br>
 [Olga's Project](https://github.com/OlgaJ1989/bookworm-paradise) - For readme inspiration and help with the contact app code.
