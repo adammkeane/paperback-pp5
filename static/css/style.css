@@ -294,6 +294,7 @@ input[type=number] {
     font-size: 1rem;
 }
 
+/* From https: //github.com/OlgaJ1989/bookworm-paradise */
 .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
     height: 1px;
