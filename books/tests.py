@@ -1,7 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-from .models import Book, BookReview, Author
-from django.utils.text import slugify
+from .models import Book, BookReview
 from django.shortcuts import get_object_or_404
 
 
@@ -25,28 +24,28 @@ class TestBooksViewsAndModels(TestCase):
         self.assertTrue(logged_in)
 
         # Create book
-        book = Book.objects.create(
+        Book.objects.create(
             name='Test title',
             description='test description',
             price='3',
         )
 
         # Create Reviews for Book
-        review1 = BookReview.objects.create(
+        BookReview.objects.create(
             title='Test review 1',
             book=get_object_or_404(Book.objects, name='Test title'),
             username=self.user,
             rating=2.5
         )
 
-        review2 = BookReview.objects.create(
+        BookReview.objects.create(
             title='Test review 2',
             book=get_object_or_404(Book.objects, name='Test title'),
             username=self.user,
             rating=5
         )
 
-        review3 = BookReview.objects.create(
+        BookReview.objects.create(
             title='Test review 3',
             book=get_object_or_404(Book.objects, name='Test title'),
             username=self.user,
@@ -101,7 +100,7 @@ class TestBooksViewsAndModels(TestCase):
 
     def test_profile_page(self):
         """ Test Profile Page """
-        response = self.client.get(f'/profile/')
+        response = self.client.get('/profile/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'profiles/profile.html')
 
@@ -131,7 +130,7 @@ class TestBooksViewsLoggedOut(TestCase):
         )
 
         # Create book
-        book = Book.objects.create(
+        Book.objects.create(
             name='Test title',
             description='test description',
             price='3',

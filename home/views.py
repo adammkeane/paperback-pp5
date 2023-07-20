@@ -1,5 +1,3 @@
-from django.shortcuts import render
-from django.views import generic, View
 from django.views.generic import ListView
 from books.models import Book
 
