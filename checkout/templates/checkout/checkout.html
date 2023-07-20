@@ -33,9 +33,9 @@
                 <div class="col-2 mb-1">
                     <a href="{% url 'book_detail' item.book.id %}">
                         {% if item.book.image %}
-                        <img class="w-100" src="{{ item.book.image.url }}" alt="{{ book.name }}">
+                        <img class="w-100" src="{{ item.book.image.url }}" alt="{{ item.book.name }}">
                         {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ book.name }}">
+                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.book.name }}">
                         {% endif %}
                     </a>
                 </div>
@@ -90,8 +90,8 @@
                             checked>
                         {% else %}
                         <label class="form-check-label" for="id-save-info">
-                            <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
-                            <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                            <a href="{% url 'account_signup' %}">Create an account</a> or
+                            <a href="{% url 'account_login' %}">login</a> to save this information
                         </label>
                         {% endif %}
                     </div>

@@ -5,7 +5,7 @@
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }} 
                     {% if item.option %}decrement-option_{{ item.item_id }}_{{ item.option }}{% endif %}"
-                    data-item_id="{{ item.item_id }}" data-option="{{ item.option }}">
+                    data-item_id="{{ item.item_id }}" data-option="{{ item.option }}" aria-label="decrement quantity">
                     <span>
                         <i class="fas fa-minus fa-sm"></i>
                     </span>
@@ -14,11 +14,11 @@
             <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }} rounded
                 {% if item.option %}option_{{ item.item_id }}_{{ item.option }}{% endif %}" type="number"
                 name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
-                data-option="{{ item.option }}">
+                data-option="{{ item.option }}" aria-label="quantity">
             <div class="input-group-append">
                 <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }} 
                     {% if item.option %}increment-option_{{ item.item_id }}_{{ item.option }}{% endif %}"
-                    data-item_id="{{ item.item_id }}" data-option="{{ item.option }}">
+                    data-item_id="{{ item.item_id }}" data-option="{{ item.option }}" aria-label="increment quantity">
                     <span>
                         <i class="fas fa-plus fa-sm"></i>
                     </span>
@@ -30,6 +30,6 @@
         </div>
     </div>
 </form>
-<a class="update-link text-info"><small>Update</small></a>
+<a class="update-link"><small>Update</small></a>
 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
     data-book_option="{{ item.option }}"><small>Remove</small></a>

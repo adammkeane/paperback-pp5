@@ -63,17 +63,18 @@
                             <div class="input-group-prepend">
                                 <span class="align-middle"><strong>Quantity</strong></span>
                                 <button class="decrement-qty btn btn-black rounded decrement-qty_{{ book.id }} pl-2"
-                                    data-item_id="{{ book.id }}">
+                                    data-item_id="{{ book.id }}" aria-label="decrement quantity">
                                     <span class="icon">
                                         <i class="fas fa-minus"></i>
                                     </span>
                                 </button>
                             </div>
+                            <label for="quantity" class="visually-hidden">Search here</label>
                             <input class="form-control qty_input id_qty_{{ book.id }} rounded" type="number"
-                                name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}">
+                                name="quantity" value="1" min="1" max="99" data-item_id="{{ book.id }}" id="quantity">
                             <div class="input-group-append">
                                 <button class="increment-qty btn btn-black rounded increment-qty_{{ book.id }}"
-                                    data-item_id="{{ book.id }}">
+                                    data-item_id="{{ book.id }}" aria-label="increment quantity">
                                     <span class="icon">
                                         <i class="fas fa-plus"></i>
                                     </span>
