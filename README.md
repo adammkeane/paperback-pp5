@@ -1,6 +1,6 @@
 # PaperBack - "We're bring paper back."
 
-PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. The aim of the site is to provide users an easy and intuitive way to browse and buy books. Additional features, such a contact forms and profiles can help make this experience more enjoyable.
+PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. The aim of the site is to provide users with an easy and intuitive way to browse and buy books. Additional features, such a contact forms and profiles can help make this experience more enjoyable.
 
 [Click here to view website.](https://paperback-pp5-4d817902330a.herokuapp.com/)
 
@@ -278,16 +278,6 @@ Rough wireframes were created to find the basic layout for key pages before codi
 
 - Home Mobile <br>
 ![Books Mobile](docs/books-wire2.JPG)
-
-- A Facebook business page
-
-  - A business page has been created for marketing reasons, to further advertise the shop, post news and communicate with customers. favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open.
-  - The page can be accessed [here](https://www.facebook.com/Bookworm-Paradise-106344228834492/?notif_id=1658868269617980&notif_t=page_invite_accept&ref=notif).
-
-    ![Facebook 1](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/fb1.JPG)
-
-    ![Facebook 2](https://github.com/OlgaJ1989/bookworm-paradise/blob/main/docs/fb2.JPG)
-
 
 # Marketing / SEO
 
