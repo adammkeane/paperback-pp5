@@ -1,6 +1,6 @@
 # PaperBack - "We're bring paper back."
 
-PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books.
+PaperBack is an online book store that specialises in physical books. The target audience for the website would be people who like to read and who prefer reading physical books. The aim of the site is to provide users an easy and intuitive way to browse and buy books. Additional features, such a contact forms and profiles can help make this experience more enjoyable.
 
 [Click here to view website.](https://paperback-pp5-4d817902330a.herokuapp.com/)
 
@@ -318,6 +318,8 @@ Keywords I came up with for PaperPark ( mixture of long and short tail):
 - novel
 - paperback books
 - hardback books
+
+The keywords are highly competetive, so SEO may not be the best way for this business to stand out.
 
 
 ### Entity Relationship Diagram
