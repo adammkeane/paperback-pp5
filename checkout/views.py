@@ -71,7 +71,9 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for option, quantity in item_data['items_by_option'].items():
+                        for option, quantity in (
+                            item_data['items_by_option'].items()
+                        ):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 book=book,
@@ -81,14 +83,16 @@ def checkout(request):
                             order_line_item.save()
                 except Book.DoesNotExist:
                     messages.error(request, (
-                        "One of the books in your bag wasn't found in our database. "
+                        "One of the books in your bag "
+                        "wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')

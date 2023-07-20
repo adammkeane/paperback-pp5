@@ -26,7 +26,9 @@ def add_to_bag(request, item_id):
             if option in bag[item_id]['items_by_option'].keys():
                 bag[item_id]['items_by_option'][option] += quantity
                 messages.success(
-                    request, f'Updated option {option.upper()} {book.name} quantity to {bag[item_id]["items_by_option"][option]}')
+                    request, f'Updated option {option.upper()} '
+                    f'{book.name} quantity to '
+                    f'{bag[item_id]["items_by_option"][option]}')
             else:
                 bag[item_id]['items_by_option'][option] = quantity
                 messages.success(
@@ -62,7 +64,9 @@ def adjust_bag(request, item_id):
         if quantity > 0:
             bag[item_id]['items_by_option'][option] = quantity
             messages.success(
-                request, f'Updated {option.upper()} {book.name} quantity to {bag[item_id]["items_by_option"][option]}')
+                request, f'Updated {option.upper()} '
+                f'{book.name} quantity to '
+                f'{bag[item_id]["items_by_option"][option]}')
         else:
             del bag[item_id]['items_by_option'][option]
             if not bag[item_id]['items_by_option']:
