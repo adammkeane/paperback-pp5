@@ -319,9 +319,10 @@ As for as content ideas, I thought users would want:
 - The ability to save delivery info so it doesn't have to be entered for every purchase.
 
 
-### Entity Relationship Diagram
+### Database Schema
 
-![ERD](docs/er-diagram.png)
+- ER Diagram used to fully describe the database schema used
+![ER Diagram](docs/er-diagram.png)
 
 ## Technologies
 
